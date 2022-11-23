@@ -16,14 +16,14 @@ export default function Services(props) {
          </Helmet>
          <Breadcrumb Title="Services" Image={IMAGES.servicePage.servicesBanner} />
          <section className="service-sec2">
-    <div className="container" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="linear">
+    <div className="container">
         <div className="row">
             <div className="col-md-12">
                 <h2>Our <span className='highlight'>Services</span></h2>
             </div>
         </div>
         <div className="row justify-content-center">
-            <div className="col-md-4 d-flex">
+            <div className="col-md-4 d-flex" data-aos="zoom-in" data-aos-delay="100" data-aos-offset="0">
                 <div className="service-box">
                     <div className="service-title">
                     <FontAwesomeIcon icon={faList} />
@@ -44,7 +44,7 @@ export default function Services(props) {
                     </ul>
                 </div>
             </div>
-            <div className="col-md-4 d-flex">
+            <div className="col-md-4 d-flex" data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0">
                 <div className="service-box active">
                 <div className="service-title">
                     <FontAwesomeIcon icon={faList} />
@@ -66,7 +66,7 @@ export default function Services(props) {
                 </div>
             </div>
             
-            <div className="col-md-4 d-flex">
+            <div className="col-md-4 d-flex" data-aos="zoom-in" data-aos-delay="500" data-aos-offset="0">
                 <div className="service-box">
                 <div className="service-title">
                     <FontAwesomeIcon icon={faList} />

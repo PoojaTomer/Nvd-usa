@@ -42,26 +42,20 @@ function Header(props) {
         <header>
         <div className="container">
             <div className="row align-items-center">
-                {/* <div className="col-md-2">
-                   
-                    
-                </div> */}
-              
-                <div className="col-md-12 navbar-s">
-            
-                    <div className="menu-icon" onClick={handleClick}>
+              <div className="col-md-12 navbar-s">
+            <div className="menu-icon" onClick={handleClick}>
                     <FontAwesomeIcon icon={click ? faTimes : faBars} />
                 </div>
                 <nav className="navbar navbar-expand-lg navbar-light">
                 <div className="navbar-collapse collapse navbar-container">
                     <div className='top-con-info'>
                 <ul className="nav navbar-nav navbar-left">
-                <Link className="navbar-brand" to="/"><img src={IMAGES.headerImg.HeaderLogo} alt="logo"/></Link>
+                <Link className="navbar-brand" to="/"><img src={IMAGES.headerImg.HeaderLogo} alt="logo"  data-aos="zoom-in" data-aos-delay="100" data-aos-offset="0" className="img-fluid" /></Link>
                 <div className="get-btn">
                         <Link onClick={showModal}>Get a Quote</Link>
                     </div>
-                            <li className='hidden-xs'><img src={IMAGES.headerImg.Phone} className="img-fluid" alt="call" /> <span><strong>Call us</strong> <a href="tel:+9715470 64859">+971 5470 64859</a></span></li>
-                            <li className='hidden-xs'><img src={IMAGES.headerImg.Email} className="img-fluid"  alt="email" /> <span><strong>Mail us</strong> <a href="mailto:hello@newvisondigital.co">hello@newvisondigital.co</a></span></li>
+                            <li className='hidden-xs' data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0"><img src={IMAGES.headerImg.Phone} className="img-fluid" alt="call" /> <span><strong>Call us</strong> <a href="tel:+9715470 64859">+971 5470 64859</a></span></li>
+                            <li className='hidden-xs' data-aos="zoom-in" data-aos-delay="500" data-aos-offset="0"><img src={IMAGES.headerImg.Email} className="img-fluid"  alt="email" /> <span><strong>Mail us</strong> <a href="mailto:hello@newvisondigital.co">hello@newvisondigital.co</a></span></li>
                         </ul>
                         </div>
                     {/* <ul className="navbar-nav mr-auto"> */}

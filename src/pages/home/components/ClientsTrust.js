@@ -50,11 +50,12 @@ var settings = {
   };
 export default function ClientsTrust(props) {
     return (
+        <>
         <section className="home-sec7">
-        <div className="container" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="linear">
+        <div className="container">
             <div className="row align-items-center">
             <div className="col-md-7">
-                    <div className="case-study review-s ">
+                    <div className="case-study review-s" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="linear">
                         {/* <!--start-slide--> */}
                         <Slider {...settings}>
                         <div class="review-in">
@@ -152,27 +153,29 @@ export default function ClientsTrust(props) {
                 </div>
                 <div className="col-md-5">
                     <div className="rev-h">
-                        <h2>200+ Clients <span>Trust on</span> <strong>NVD</strong> Marketing <span>strategy</span></h2>
+                        <h2 data-aos="fade-up" data-aos-delay="100" data-aos-offset="0">200+ Clients <span>Trust on</span> <strong>NVD</strong> Marketing <span>strategy</span></h2>
                     </div>
                     <div className="rev-star">
-                        <ul>
+                        <ul data-aos="fade-up" data-aos-delay="200" data-aos-offset="0">
                             <li><FontAwesomeIcon icon={faStar} color="#ffb50e" /></li>
                             <li><FontAwesomeIcon icon={faStar} color="#ffb50e" /></li>
                             <li><FontAwesomeIcon icon={faStar} color="#ffb50e" /></li>
                             <li><FontAwesomeIcon icon={faStar} color="#ffb50e" /></li>
                             <li><FontAwesomeIcon icon={faStar} color="#ffb50e" /></li>
                         </ul>
-                        <h6>150+ Reviews based on</h6>
+                        <h6 data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">150+ Reviews based on</h6>
                     </div>
                     <div className="rev-b-client">
-                        <img src={IMAGES.homepage.MarketStrat} className="img-fluid" alt='Market start' />
+                        <img src={IMAGES.homepage.MarketStrat} className="img-fluid" alt='Market start'  data-aos="zoom-in" data-aos-delay="100" data-aos-offset="0" />
                     </div>
                     <div className="btn-rev">
-                        <GetAQuoteButton Title="Get a Free Consultation" />
+                        <GetAQuoteButton Title="Get a Free Consultation" CtaFloat={true} />
                         </div>
                 </div>
             </div>
         </div>
     </section>
+
+    </>
     );
 }

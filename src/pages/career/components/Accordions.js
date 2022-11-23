@@ -106,14 +106,14 @@ export default function Accordions(props) {
     return (
         <>
         <section className="career-sec4">
-        <div className="container" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="linear">
-            <h2>What are we <span className='highlight'>hiring</span> for?</h2>
-            <h4>Join our mission</h4>
-            <p>To provide industry-leading digital marketing services to clients while growing both personally and professionally.</p>
+        <div className="container">
+            <h2 data-aos="fade-up" data-aos-delay="100" data-aos-offset="0" data-aos-duration="500" data-aos-easing="linear">What are we <span className='highlight'>hiring</span> for?</h2>
+            <h4 data-aos="fade-up" data-aos-delay="200" data-aos-offset="0" data-aos-duration="600" data-aos-easing="linear">Join our mission</h4>
+            <p data-aos="fade-up" data-aos-delay="300" data-aos-offset="0" data-aos-duration="700" data-aos-easing="linear">To provide industry-leading digital marketing services to clients while growing both personally and professionally.</p>
             <div className="accordion" id="faq">
             {CategoryData?.map((value,index) => {
                 return(
-                    <div className="card" key={index}>
+                    <div className="card" key={index} data-aos="fade-up" data-aos-delay="300" data-aos-offset="0" data-aos-duration="700" data-aos-easing="linear">
                         <div className="card-header" id="faqhead1">
                             <a className="btn btn-header-link" onClick={() => setCurrentState(value.Name)}>{value.Name}
                             <div className="accordion-icon">
@@ -133,7 +133,7 @@ export default function Accordions(props) {
             })
             }
             </div>
-            <center><ApplyForCareerButton Title="Apply Here" /></center>
+            <center data-aos="fade-up" data-aos-delay="500" data-aos-offset="0" data-aos-duration="1000" data-aos-easing="linear"><ApplyForCareerButton Title="Apply Here" /></center>
         </div>
     </section>
     </>

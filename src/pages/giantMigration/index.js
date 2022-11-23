@@ -15,7 +15,7 @@ export default function GiantMigration(props) {
             <meta name="description" content="Find end-to-end digital marketing strategy for our clients to drive better sales. Connect with the best digital marketing company in Dubai. Enquire Now!" />
             <meta name="keyword" content="Nvd usa" />
       </Helmet>
-      <Breadcrumb Title="Giant Migration" Image={IMAGES.portfolioPage.PortfolioBanner} />
+      <Breadcrumb Title="Giant Migration" Image={IMAGES.portfolioPage.GiantMigration} />
       <ImmigrationCompany />
       <Objectives />
       <OurApproach/>

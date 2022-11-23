@@ -145,28 +145,29 @@ export default function ReadyToGet(props) {
         {
             props.form === false ?
             <section className="form-cta">
-            <div className="container" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="linear">
+            <div className="container">
                 <div className="row">
                     <div className="col-md-6 offset-md-3 text-center">
-                            <h4>{props.Title}</h4>
-                            <p>{props.Description}</p><br/>
-                            <GetAQuoteButton Title="Get In Touch" btn="btn-3" />
+                            <h4 data-aos="fade-up" data-aos-delay="100" data-aos-offset="0">{props.Title}</h4>
+                            <p data-aos="fade-up" data-aos-delay="200" data-aos-offset="0">{props.Description}</p>
+                            <GetAQuoteButton Title="Get In Touch" btn="btn-1" />
                             {/* <Link className="btn-3" to="/contact">Get In Touch</Link> */}
-                        <a href="tel:97143321900" className="call-btn"><FontAwesomeIcon icon={faPhone} /> +97143321900</a>
+                        <a data-aos="fade-up" data-aos-delay="400" data-aos-offset="0" href="tel:97143321900" className="btn-2 ml-2"><FontAwesomeIcon icon={faPhone} /> +97143321900</a>
                         </div>
                 </div>
             </div>
         </section>:
+        <div className='bg-wrap'>
         <section className="inner-service-sec5">
         <div className="container">
             <div className="row align-items-center">
-                <div className="col-md-6 text-center">
-                    <div className="cta-box">
-                        <h4>{props.Title}</h4>
-                        <p>{props.Description}</p>
-                        <Link className="btn-3" to="/contact">Get In Touch</Link>
-                        <a href="tel:97143321900" className="call-btn"><FontAwesomeIcon icon={faPhone} /> +97143321900</a>
-                        </div>
+                <div className="col-md-6">
+                    {/* <div className="cta-box"> */}
+                        <h4 data-aos="fade-up" data-aos-delay="100" data-aos-offset="0">{props.Title}</h4>
+                        <p data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">{props.Description}</p>
+                        {/* <Link className="btn-3" to="/contact">Get In Touch</Link> */}
+                        <a href="tel:97143321900" className="btn-2 ml-2" data-aos="fade-up" data-aos-delay="500" data-aos-offset="0"><FontAwesomeIcon icon={faPhone} /> +97143321900</a>
+                        {/* </div> */}
                 </div>
                 <div className="col-md-6">
                     <div className="h-sec8-form">
@@ -174,7 +175,7 @@ export default function ReadyToGet(props) {
                             <h3>Let's Get <strong>On A Discovery Call</strong></h3>
                             <form onSubmit={(e) => submitHandler(e)}>
                             <ul className="form-list">
-                                <li>
+                                <li data-aos="fade-up" data-aos-delay="100" data-aos-offset="0">
                                     <input type="text" className="form-control" placeholder="First Name*"  value={discoveryCallForm.firstName} onChange={e => setDiscoveryCallForm({
                                             ...discoveryCallForm,
                                             firstName: e.target.value,
@@ -182,7 +183,7 @@ export default function ReadyToGet(props) {
                                         })} disabled={discoveryCallForm.processing} />
                                      <span className='error'>{discoveryCallForm.firstNameError}</span>
                                 </li>
-                                <li>
+                                <li data-aos="fade-up" data-aos-delay="200" data-aos-offset="0">
                                     <input type="text" className="form-control" placeholder="Last Name*" value={discoveryCallForm.lastName} onChange={e => setDiscoveryCallForm({
                                                 ...discoveryCallForm,
                                                 lastName: e.target.value,
@@ -190,7 +191,7 @@ export default function ReadyToGet(props) {
                                             })}  disabled={discoveryCallForm.processing} />
                                     <span className='error'>{discoveryCallForm.lastNameError}</span>
                                 </li>
-                                <li>
+                                <li data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
                                     <input type="email" className="form-control" placeholder="Email*"  value={discoveryCallForm.email} onChange={e => setDiscoveryCallForm({
                                                 ...discoveryCallForm,
                                                 email: e.target.value,
@@ -198,7 +199,7 @@ export default function ReadyToGet(props) {
                                             })} disabled={discoveryCallForm.processing} />
                                     <span className='error'>{discoveryCallForm.emailError}</span>
                                </li>
-                                <li> 
+                                <li data-aos="fade-up" data-aos-delay="400" data-aos-offset="0"> 
                                     <input type="number" className="form-control" placeholder="Phone*"  value={discoveryCallForm.mobile} onChange={e => setDiscoveryCallForm({
                                             ...discoveryCallForm,
                                             mobile: e.target.value,
@@ -206,7 +207,7 @@ export default function ReadyToGet(props) {
                                         })} disabled={discoveryCallForm.processing} />
                                     <span className='error'>{discoveryCallForm.mobileError}</span>
                                 </li>
-                                <li className="cnr-full">
+                                <li className="cnr-full" data-aos="fade-up" data-aos-delay="500" data-aos-offset="0">
                                     <select className="form-control" value={discoveryCallForm.services} onChange={e => setDiscoveryCallForm({
                                                 ...discoveryCallForm,
                                                 services: e.target.value,
@@ -237,7 +238,7 @@ export default function ReadyToGet(props) {
                                     </select>
                                     <span className='error'>{discoveryCallForm.servicesError}</span>
                                 </li>
-                                 <li className="cnr-full">
+                                 <li className="cnr-full" data-aos="fade-up" data-aos-delay="600" data-aos-offset="0">
                                     <textarea className="form-control" rows="4" value={discoveryCallForm.message} onChange={e => setDiscoveryCallForm({
                                             ...discoveryCallForm,
                                             message: e.target.value,
@@ -252,7 +253,7 @@ export default function ReadyToGet(props) {
                                     <ReCAPTCHA ref={captchaRef} sitekey="6Ldy6IEhAAAAAOnXdArKtwygfu6f3doYCblZQYHi"
                                         size="invisible" />
                                 </li>
-                            <li className="cnr-full">
+                            <li className="cnr-full" data-aos="fade-up" data-aos-delay="700" data-aos-offset="0">
                                 <button className="btn-1">Submit</button>
                             </li>
                         </ul>
@@ -263,6 +264,7 @@ export default function ReadyToGet(props) {
             </div>
         </div>
     </section>
+    </div>
 }
     </>
     );

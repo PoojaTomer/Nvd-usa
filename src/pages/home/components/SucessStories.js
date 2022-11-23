@@ -47,8 +47,8 @@ function SucessStories(props) {
       };
     return (
         <section className="home-sec2">
-        <div className="container" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="linear">
-            <div className="row">
+        <div className="container">
+            <div className="row" data-aos="fade-up">
                 <div className="col-md-5">
                     <div className="h-sec2-h">
                         <h2>Sucess Stories Crafted On Global Forefront For</h2>
@@ -63,31 +63,31 @@ function SucessStories(props) {
             <div className="row">
                 <div className="col-md-12">
                 <Slider {...settings} spaceBetween={30}>
-                    <div className="client-area">
+                    <div className="client-area" data-aos="zoom-in">
                         <img src={IMAGES.homepage.ClientLogo1} className="img-fluid" alt="clientlogo1" />
                         <img src={IMAGES.homepage.ClientLogo2} className="img-fluid" alt="clientlogo2" />
                     </div>
-                    <div className="client-area">
+                    <div className="client-area" data-aos="zoom-in" data-aos-delay="100" data-aos-offset="0">
                         <img src={IMAGES.homepage.ClientLogo3} className="img-fluid" alt="clientlogo3" />
                         <img src={IMAGES.homepage.ClientLogo4} className="img-fluid" alt="clientlogo4" />
                     </div>
-                    <div className="client-area">
+                    <div className="client-area" data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0">
                         <img src={IMAGES.homepage.ClientLogo5} className="img-fluid" alt="clientlogo5" />
                         <img src={IMAGES.homepage.ClientLogo6} className="img-fluid" alt="clientlogo6" />
                     </div>
-                    <div className="client-area">
+                    <div className="client-area" data-aos="zoom-in" data-aos-delay="500" data-aos-offset="0">
                         <img src={IMAGES.homepage.ClientLogo7} className="img-fluid" alt="clientlogo7" />
                         <img src={IMAGES.homepage.ClientLogo8} className="img-fluid" alt="clientlogo8" />
                     </div>
-                    <div className="client-area">
+                    <div className="client-area" data-aos="zoom-in" data-aos-delay="700" data-aos-offset="0">
                         <img src={IMAGES.homepage.ClientLogo9} className="img-fluid" alt="clientlogo9" />
                         <img src={IMAGES.homepage.ClientLogo10} className="img-fluid" alt="clientlogo10" />
                     </div>
-                    <div className="client-area">
+                    <div className="client-area" data-aos="zoom-in" data-aos-delay="900" data-aos-offset="0">
                         <img src={IMAGES.homepage.ClientLogo11} className="img-fluid" alt="clientlogo11" />
                         <img src={IMAGES.homepage.ClientLogo12} className="img-fluid" alt="clientlogo12" />
                     </div>
-                    <div className="client-area">
+                    <div className="client-area" data-aos="zoom-in" data-aos-delay="1000" data-aos-offset="0">
                         <img src={IMAGES.homepage.ClientLogo5} className="img-fluid" alt="clientlogo5" />
                         <img src={IMAGES.homepage.ClientLogo6} className="img-fluid" alt="clientlogo6" />
                     </div>

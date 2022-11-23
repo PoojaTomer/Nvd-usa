@@ -4,16 +4,16 @@ import { IMAGES } from '../constants/Image-Constant';
 export default function OurLocations(props) {
     return (
         <section className="home-sec9">
-        <div className="container" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="linear">
+        <div className="container">
             <div className="row">
                 <div className="col-md-12">
-                    <div className="cen-h">
+                    <div className="cen-h" data-aos="fade-up">
                         <h2>Our <span className="highlight">Locations</span></h2>
                     </div>
                 </div>
             </div>
             <div className="row">
-                <div className="col-md-4">
+                <div className="col-md-4" data-aos="zoom-in" data-aos-delay="100" data-aos-offset="0">
                     <div className="h-loc-sec">
                         <h3><img src={IMAGES.homepage.UsaFlag} className="img-fluid" alt="usa" /> <span>USA</span></h3>
                         <div className="h-loc-in">
@@ -27,7 +27,7 @@ export default function OurLocations(props) {
                         </div>
                     </div>   
                 </div>
-                <div className="col-md-4">
+                <div className="col-md-4" data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0">
                     <div className="h-loc-sec">
                         <h3><img src={IMAGES.homepage.IndiaFlag} className="img-fluid" alt="india" /> <span>India</span></h3>
                         <div className="h-loc-in">
@@ -41,7 +41,7 @@ export default function OurLocations(props) {
                         </div>
                     </div>   
                 </div>
-                <div className="col-md-4">
+                <div className="col-md-4" data-aos="zoom-in" data-aos-delay="500" data-aos-offset="0">
                     <div className="h-loc-sec">
                         <h3><img src={IMAGES.homepage.UaeFlag} className="img-fluid" alt="use" /> <span>UAE</span></h3>
                         <div className="h-loc-in">

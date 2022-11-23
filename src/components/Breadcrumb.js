@@ -8,11 +8,11 @@ export default function Breadcrumb(props) {
             <div className="row">
                 <div className="col-md-12">
                     <div className="bread-in">
-                        <h1>{props.Title}</h1>
+                        <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">{props.Title}</h1>
                         <ul>
-                            <li><Link to="/">Home</Link></li>
+                            <li data-aos="zoom-in" data-aos-delay="100" data-aos-offset="0"><Link to="/">Home</Link></li>
                             <li>|</li>
-                            <li className="active"><a href="#">{props.Title}</a></li>
+                            <li data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0" className="active"><a href="#">{props.Title}</a></li>
                         </ul>
                     </div>
                 </div>

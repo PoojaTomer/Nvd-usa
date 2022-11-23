@@ -3,10 +3,11 @@ import React from 'react';
 export default function ServiceList(props) {
     return (
         <section className={props.ImgList === true ? "innerservice-sec3":"inner-service-sec3"}>
-        <div className="container" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="linear">
+        <div className="container" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
             <div className="row">
                 <div className="col-md-8 offset-md-2">
                     <h2>{props.Heading}</h2>
+                    {props.para?<p className='text-center'>{props.para}</p>:""}
                 </div>
             </div>
             

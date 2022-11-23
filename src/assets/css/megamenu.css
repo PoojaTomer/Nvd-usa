@@ -1,5 +1,5 @@
 /*mega menu*/
-.mega-menu {left: 0;right: 0;padding: 15px;display:none;padding-top: 0;min-height: 100%;box-shadow:0px 0px 5px 0px #ccc;padding-bottom: 0;}
+.mega-menu {left: 0;right: 0;padding: 15px;display:none;padding-top: 0;min-height: 100%;box-shadow:0px 0px 5px 0px #ccc;padding-bottom: 0;background: url('../images/header-bg.jpg');background-size: cover;background-repeat: no-repeat;}
 @keyframes blinking {
     0% {
       background-color: #f1c9af;
@@ -19,7 +19,9 @@ h4.mega-title {color: #000;margin-top: 0px;font-size: 14px;padding-bottom: 13px;
 .mega-menu ul li{position: relative;}
 /* .mega-menu ul li::before{position: absolute;top: 0;left: 0;content: '\00BB';line-height: 35px;color: #4c4c4c;font-weight: 600;font-size: 1rem;} */
 .mega-menu{background-color: #fff;}
-h4.mega-title img{width: 2vw;height: 5vh;margin-right: 0.5rem;}
+h4.mega-title img{
+  /* width: 2vw;height: 5vh; */
+  margin-right: 0.5rem;}
 .mega-menu ul li{transition: all 0.5s ease-in-out;transition-delay: 0.3s;}
 .mega-menu ul li:hover a{color:#000;transition: all 0.3s ease-in-out;z-index: 99999;}
 .mega-menu ul li:hover::before{color:transparent;}

@@ -1,9 +1,15 @@
 
 // header 
-import HeaderLogo from "../assets/images/logo.webp";
+import HeaderLogo from "../assets/images/logo-1.png";
 import PhoneIcon from "../assets/images/call.png";
 import MailIcon from "../assets/images/mail.png";
 import ServiceMenu from "../assets/images/services-menu.jpg";
+import Icon1 from "../assets/images/icon-1.png";
+import Icon2 from "../assets/images/icon-2.png";
+import Icon3 from "../assets/images/icon-3.png";
+import Icon4 from "../assets/images/icon-4.png";
+import Icon5 from "../assets/images/icon-5.png";
+import Icon6 from "../assets/images/icon-6.png";
 // footer 
 import BingAds from "../assets/images/bing-ads.png";
 import GooglePartner from "../assets/images/google-partner.jpg";
@@ -43,7 +49,7 @@ import CaseStudy1 from "../assets/images/ac1.png";
 import CaseStudy2 from "../assets/images/ac2.png";
 import CaseStudy3 from "../assets/images/ac3.png";
 import Google from "../assets/images/google.png";
-import SeoHome from "../assets/images/seo.png";
+import SeoHome from "../assets/images/analyse.png";
 import marketStrat from "../assets/images/market-strat.jpg";
 import Reviews from "../assets/images/rev1.jpg";
 import ClientPic from "../assets/images/client.png";
@@ -53,7 +59,7 @@ import UsaFlag from "../assets/images/usa.jpg";
 import UaeFlag from "../assets/images/uae.jpg";
 import globalbizLogo from "../assets/images/globalbiz.jpg";
 // about page
-import AboutBanner from "../assets/images/about-us-banner.jpg";
+import AboutBanner from "../assets/images/about-banner.jpg";
 import AboutNvd from "../assets/images/about-nvd.png";
 import sumitTayal from "../assets/images/sumit-tayal.png";
 import pawanGupta from "../assets/images/pawan-gupta.png";
@@ -62,12 +68,13 @@ import vikrantPratap from "../assets/images/vikrant-pratap.png";
 import shashankSaxena from "../assets/images/shashank-saxena.png";
 import jyotiMotwani from "../assets/images/jyoti-motwani.png";
 // contact page
-import ContactBanner from "../assets/images/contact-us.jpg";
+import ContactBanner from "../assets/images/contact-banner.jpg";
 import IconUsa from "../assets/images/icon-usa.png";
 import IconIndia from "../assets/images/icon-india.png";
 import IconUae from "../assets/images/icon-uae.png";
 // Portfolio page
-import PortfolioBanner from "../assets/images/portfplio.jpg";
+import PortfolioBanner from "../assets/images/portfolio.jpg";
+import GiantMigration from "../assets/images/giant-migration.jpg";
 import portfolioGiantMigration from "../assets/images/portfolio-giant-migration.jpg";
 import website from "../assets/images/website.png";
 import seoMig from "../assets/images/seo-mig.png";
@@ -104,10 +111,16 @@ import extraordinary from "../assets/images/extraordinary.png";
 import over6000 from "../assets/images/over-6000.png";
 import booming from "../assets/images/76k.png";
 import rank from "../assets/images/rank.png";
-import Objective1 from "../assets/images/establish.png";
-import Objective2 from "../assets/images/getting-quality.png";
-import Objective3 from "../assets/images/improve.png";
-import Objective4 from "../assets/images/enhancing.png";
+import Objective1 from "../assets/images/objective1.png";
+import Objective2 from "../assets/images/objective2.png";
+import Objective3 from "../assets/images/objective3.png";
+import Objective4 from "../assets/images/objective4.png";
+import WhatBranding from "../assets/images/branding.jpg";
+import WhatWebsite from "../assets/images/website.jpg";
+import WhatSocialMedia from "../assets/images/social-media.jpg";
+import WhatPaidAds from "../assets/images/paid-ads.jpg";
+import WhatSEO from "../assets/images/seo.jpg";
+
 // Intership page
 import intershipBanner from "../assets/images/about-us-banner.jpg";
 import intershipImg from "../assets/images/intership-img.png";
@@ -119,17 +132,19 @@ import digitalIcon from "../assets/images/digital-icon.png";
 import readyJoin from "../assets/images/ready-join.png";
 // Services page
 import servicesBanner from "../assets/images/services.jpg";
+import servicesSocialAadBanner from "../assets/images/sma-banner.jpg";
 import SeoAbout from "../assets/images/aiming-for.gif";
 import SeoEntity1 from "../assets/images/strategise.gif";
 import SeoEntity2 from "../assets/images/personalise.gif";
 import SeoEntity3 from "../assets/images/optimise.gif";
 import SeoEntity4 from "../assets/images/analyse.gif";
 import SeoResion from "../assets/images/seo-resion.png";
-import SmmAbout from "../assets/images/sec-about.png";
-import SmmEntity1 from "../assets/images/set-campaign.png";
-import SmmEntity2 from "../assets/images/production-content.png";
-import SmmEntity3 from "../assets/images/deliver-dramatic.png";
-import SmmEntity4 from "../assets/images/understand.png";
+import SmmAbout from "../assets/images/smm-about.gif";
+import SmmServices from "../assets/images/social-media-marketing-services.gif";
+import SmmEntity1 from "../assets/images/set-a-campaign.gif";
+import SmmEntity2 from "../assets/images/production-of-content.jpg";
+import SmmEntity3 from "../assets/images/deliver-dramatic.gif";
+import SmmEntity4 from "../assets/images/understand-what.jpg";
 import ImAbout from "../assets/images/influncer1.jpg";
 import ImEntity1 from "../assets/images/influncer2.jpg";
 import ImEntity2 from "../assets/images/influncer3.jpg";
@@ -176,9 +191,12 @@ import ppcAbout from "../assets/images/ppc-1.png";
 import ppcAbout1 from "../assets/images/ppc-2.png";
 import ppcListing from "../assets/images/ppc-3.png";
 import ppcResion from "../assets/images/ppc-4.png";
-import SAddAbout from "../assets/images/inrsale01.png";
-import SAddAbout1 from "../assets/images/viwers-img01.png";
-import SAddListing from "../assets/images/sit-back.png";
+import SAddAbout from "../assets/images/sma-about.jpg";
+import SAddEntity1 from "../assets/images/sma-entity1.jpg";
+import SAddEntity2 from "../assets/images/sma-entity2.jpg";
+import SAddEntity3 from "../assets/images/sma-entity3.jpg";
+import SAddEntity4 from "../assets/images/sma-entity4.jpg";
+import SAddEntity5 from "../assets/images/sma-entity5.jpg";
 import WebDesignAbout from "../assets/images/web-design1.png";
 import WebDesignListing1 from "../assets/images/web-design2.png";
 import WebDesignListing2 from "../assets/images//web-design3.png";
@@ -190,7 +208,12 @@ export const IMAGES = {
         Phone:PhoneIcon,
         Email:MailIcon,
         ServiceMenu:ServiceMenu,
-       
+        Icon1:Icon1,
+        Icon2:Icon2,
+        Icon3:Icon3,
+        Icon4:Icon4,
+        Icon5:Icon5,
+        Icon6:Icon6
     },
     footerImg : {
         FooterLogo: HeaderLogo,
@@ -261,6 +284,7 @@ export const IMAGES = {
     },
     portfolioPage:{
         PortfolioBanner:PortfolioBanner,
+        GiantMigration:GiantMigration,
         PortfolioGiantMigration:portfolioGiantMigration,
         Website:website,
         SeoMig:seoMig,
@@ -287,6 +311,11 @@ export const IMAGES = {
         Objective2:Objective2,
         Objective3:Objective3,
         Objective4:Objective4,
+        WhatBranding:WhatBranding,
+        WhatWebsite:WhatWebsite,
+        WhatSocialMedia:WhatSocialMedia,
+        WhatPaidAds:WhatPaidAds,
+        WhatSEO:WhatSEO,
     },
     intershipPage:{
         IntershipBanner:intershipBanner,
@@ -300,6 +329,7 @@ export const IMAGES = {
     },
    servicePage:{
     servicesBanner:servicesBanner,
+   ServicesSocialAadBanner:servicesSocialAadBanner,
     SeoAbout:SeoAbout,
     SeoEntity1:SeoEntity1,
     SeoEntity2:SeoEntity2,
@@ -307,6 +337,7 @@ export const IMAGES = {
     SeoEntity4:SeoEntity4,
     SeoResion:SeoResion,
     SmmAbout:SmmAbout,
+    SmmServices:SmmServices,
     SmmEntity1:SmmEntity1,
     SmmEntity2:SmmEntity2,
     SmmEntity3:SmmEntity3,
@@ -358,8 +389,11 @@ export const IMAGES = {
     PpcListing:ppcListing,
     PpcResion:ppcResion,
     SAddAbout:SAddAbout,
-    SAddAbout1:SAddAbout1,
-    SAddListing:SAddListing,
+    SAddEntity1:SAddEntity1,
+    SAddEntity2:SAddEntity2,
+    SAddEntity3:SAddEntity3,
+    SAddEntity4:SAddEntity4,
+    SAddEntity5:SAddEntity5,
     WebDesignAbout:WebDesignAbout,
     WebDesignListing1:WebDesignListing1,
     WebDesignListing2:WebDesignListing2,

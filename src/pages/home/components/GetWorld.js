@@ -5,9 +5,9 @@ import { IMAGES } from '../../../constants/Image-Constant';
 export default function GetWorld(props) {
     return (
         <section className="home-sec3">
-        <div className="container" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="linear">
+        <div className="container">
             <div className="row align-items-center">
-                <div className="col-md-4">
+                <div className="col-md-4" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="linear">
                     <div className="h-sec4-h">
                         <h2>Get the world visiting your website with our premium <span className='highlight'>SEO services</span></h2>
                         <Link to="/services" className="btn-1">Reserve Your Top Spot on Leading SERPs</Link>
@@ -15,7 +15,7 @@ export default function GetWorld(props) {
                 </div>
                 <div className="col-md-8">
                     <div className="row">
-                        <div className="col-md-6">
+                        <div className="col-md-6" data-aos="fade-up" data-aos-delay="100" data-aos-offset="0">
                             <div className="h-sec3-box">
                                 <div className="h-ic">
                                     <div className="h-ic-sec">
@@ -28,7 +28,7 @@ export default function GetWorld(props) {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-md-6" data-aos="fade-up" data-aos-delay="100" data-aos-offset="0">
                             <div className="h-sec3-box">
                                 <div className="h-ic">
                                     <div className="h-ic-sec">
@@ -41,7 +41,7 @@ export default function GetWorld(props) {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-md-6" data-aos="fade-up" data-aos-delay="200" data-aos-offset="0">
                             <div className="h-sec3-box">
                                 <div className="h-ic">
                                     <div className="h-ic-sec">
@@ -54,7 +54,7 @@ export default function GetWorld(props) {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-md-6" data-aos="fade-up" data-aos-delay="200" data-aos-offset="0">
                             <div className="h-sec3-box">
                                 <div className="h-ic">
                                     <div className="h-ic-sec">
@@ -67,7 +67,7 @@ export default function GetWorld(props) {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-md-6" data-aos="fade-up" data-aos-delay="400" data-aos-offset="0">
                             <div className="h-sec3-box">
                                 <div className="h-ic">
                                     <div className="h-ic-sec">
@@ -80,7 +80,7 @@ export default function GetWorld(props) {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-md-6" data-aos="fade-up" data-aos-delay="400" data-aos-offset="0">
                             <div className="h-sec3-box">
                                 <div className="h-ic">
                                     <div className="h-ic-sec">

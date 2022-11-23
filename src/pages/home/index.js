@@ -31,8 +31,9 @@ export default function Homepage(props) {
             <OurOffbeatMarketing />
            <SucessStories />
            <GetWorld />
-           <ReadyToGet form={false} Title="Advertise! Attract! Acquire! Encore!" Description="Connect with us to get a free proposal by our experts today" />
+        
            <Services />
+           <ReadyToGet form={false} Title="Advertise! Attract! Acquire! Encore!" Description="Connect with us to get a free proposal by our experts today" />
            <CaseStudy />
            <WitnessTheGrowth/>
            <ClientsTrust />

@@ -48,10 +48,10 @@ var settings = {
 export default function Services(props) {
     return (
         <section className="home-sec4">
-        <div className="container" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="linear">
+        <div className="container">
             <div className="row">
                 <div className="col-md-12">
-                    <div className="cen-h">
+                    <div className="cen-h" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
                         <h2>360 Digital Marketing Solutions <span className='highlight'>for your Business</span></h2>
                     </div>
                 </div>
@@ -60,7 +60,7 @@ export default function Services(props) {
                 <div className="col-md-12">
                   <div className="services-sider"> 
                   <Slider {...settings} spaceBetween={30}>
-                  <div className="b-box">
+                  <div className="b-box" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="linear">
                         <div className="h-sec4-box">
                             <div className="h-sec4-img">
                                 <img src={IMAGES.homepage.Services1} className="img-fluid" alt="Web Design" />
@@ -71,7 +71,7 @@ export default function Services(props) {
                             </div>
                         </div>
                     </div>
-                    <div className="b-box">
+                    <div className="b-box" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
                         <div className="h-sec4-box">
                             <div className="h-sec4-img">
                                 <img src={IMAGES.homepage.Services2} className="img-fluid" alt="Social Media" />
@@ -82,7 +82,7 @@ export default function Services(props) {
                             </div>
                         </div>
                     </div>
-                    <div className="b-box">
+                    <div className="b-box" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="linear">
                         <div className="h-sec4-box">
                             <div className="h-sec4-img">
                                 <img src={IMAGES.homepage.Services3} className="img-fluid" alt="Reputation" />

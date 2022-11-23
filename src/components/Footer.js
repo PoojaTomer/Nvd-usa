@@ -34,7 +34,7 @@ function Footer(props) {
                     <div className="col-lg-3">
                         <div className="footer-logo">
                             <Link to="/">
-                                <img src={IMAGES.footerImg.FooterLogo} alt="header-logo" />
+                                <img src={IMAGES.footerImg.FooterLogo} alt="header-logo" className="img-fluid" />
                             </Link>
                         </div>
                         <div className="footer-con">
@@ -103,17 +103,17 @@ function Footer(props) {
         <FontAwesomeIcon icon={faMessage} className="whatsapp-icon" color="#fff" />
         </a>
         <ul className="social-float">
-        <li>
-            <a href={SOCIAL_LINK.FACEBOOK} target="_blank"><FaFacebookF /></a>
+        <li className='fb-icon'>
+            <a href={SOCIAL_LINK.FACEBOOK} target="_blank"><FaFacebookF color='#1877f2' /></a>
         </li>
-        <li>
-            <a href={SOCIAL_LINK.TWITTER} target="_blank"><FaTwitter /></a>
+        <li className='twitter-icon'>
+            <a href={SOCIAL_LINK.TWITTER} target="_blank"><FaTwitter color='#1da1f2' /></a>
         </li>
-        <li>
-            <a href={SOCIAL_LINK.INSTAGRAM} target="_blank"><FaInstagram /></a>
+        <li className='inst-icon'>
+            <a href={SOCIAL_LINK.INSTAGRAM} target="_blank"><FaInstagram color='#E4405F' /></a>
         </li>
-        <li>
-            <a href={SOCIAL_LINK.LINKEDIN} target="_blank"><FaLinkedinIn /></a>
+        <li className='linkedin-icon'>
+            <a href={SOCIAL_LINK.LINKEDIN} target="_blank"><FaLinkedinIn color='#0a66c2' /></a>
         </li>
     </ul>
     </>

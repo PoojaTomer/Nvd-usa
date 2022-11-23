@@ -7,9 +7,9 @@ import { faMapMarkerAlt } from '@fortawesome/fontawesome-free-solid';
 export default function OurLocation(props) {
     return (
         <section className="contact-sec1">
-        <div className="container" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="linear">
+        <div className="container" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
             <div className="row">
-                <div className="col-md-4">
+                <div className="col-md-4" data-aos="zoom-in" data-aos-delay="100" data-aos-offset="0">
                     <div className="address-sec">
                         <div className="ad-icon"><img src={IMAGES.contactPage.IconUsa} alt="Usa" /></div>
                         <h3><img src={IMAGES.homepage.UsaFlag} alt="usa flag" /> USA</h3>
@@ -21,7 +21,7 @@ export default function OurLocation(props) {
                         </ul>
                     </div>
                 </div>
-                <div className="col-md-4">
+                <div className="col-md-4" data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0">
                     <div className="address-sec">
                         <div className="ad-icon"><img src={IMAGES.contactPage.IconIndia} alt="India Icon" /></div>
                         <h3><img src={IMAGES.homepage.IndiaFlag} alt="India flag" /> INDIA</h3>
@@ -33,7 +33,7 @@ export default function OurLocation(props) {
                         </ul>
                     </div>
                 </div>
-                <div className="col-md-4">
+                <div className="col-md-4" data-aos="zoom-in" data-aos-delay="500" data-aos-offset="0">
                     <div className="address-sec">
                         <div className="ad-icon"><img src={IMAGES.contactPage.IconUae} alt="Uae Icon" /></div>
                         <h3><img src={IMAGES.homepage.UaeFlag} alt="Uae flag" /> UAE</h3>

@@ -125,16 +125,16 @@ export default function SendAMessage(props) {
         }
     return (
         <section className="contact-sec2">
-        <div className="container" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="linear">
+        <div className="container">
                 <div className="row">
                     <div className="col-md-12">
                         <div className="con-form">
                         <div className="cen-h">
-                        <h2>Send A <span className='highlight'>Message</span></h2>
+                        <h2 data-aos="fade-down" data-aos-duration="1000" data-aos-easing="linear">Send A <span className='highlight'>Message</span></h2>
                     </div>
                         <form onSubmit={(e) => submitHandler(e)}>
                         <ul className="form-list">
-                            <li> 
+                            <li data-aos="zoom-in" data-aos-delay="100" data-aos-offset="0"> 
                                 <input type="text" name="name" placeholder="Name" className="form-control" value={SendAMessageForm.fullName} onChange={e => setSendAMessageForm({
                                         ...SendAMessageForm,
                                         fullName: e.target.value,
@@ -142,7 +142,7 @@ export default function SendAMessage(props) {
                                     })} disabled={SendAMessageForm.processing} />
                                 <span className='error'>{SendAMessageForm.fullNameError}</span>
                             </li>
-                            <li>
+                            <li data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0">
                                 <input type="email" name="name" placeholder="Email Id" className="form-control" value={SendAMessageForm.email} onChange={e => setSendAMessageForm({
                                         ...SendAMessageForm,
                                         email: e.target.value,
@@ -150,7 +150,7 @@ export default function SendAMessage(props) {
                                     })} disabled={SendAMessageForm.processing} />
                                 <span className='error'>{SendAMessageForm.emailError}</span>
                             </li>
-                            <li> 
+                            <li data-aos="zoom-in" data-aos-delay="500" data-aos-offset="0"> 
                                 <input type="number" name="name" placeholder="Phone No." className="form-control" value={SendAMessageForm.mobile} onChange={e => setSendAMessageForm({
                                         ...SendAMessageForm,
                                         mobile: e.target.value,
@@ -158,7 +158,7 @@ export default function SendAMessage(props) {
                                     })} disabled={SendAMessageForm.processing} />
                                 <span className='error'>{SendAMessageForm.mobileError}</span>
                             </li>
-                            <li>
+                            <li data-aos="zoom-in" data-aos-delay="700" data-aos-offset="0">
                             <select className="form-control" value={SendAMessageForm.services} onChange={e => setSendAMessageForm({
                                         ...SendAMessageForm,
                                         services: e.target.value,
@@ -189,7 +189,7 @@ export default function SendAMessage(props) {
                                 </select>
                                 <span className='error'>{SendAMessageForm.servicesError}</span>
                             </li>
-                            <li className="cnr-full">
+                            <li className="cnr-full" data-aos="zoom-in" data-aos-delay="900" data-aos-offset="0">
                                 <textarea rows="4" placeholder="Message" name="message" className="form-control" value={SendAMessageForm.message} onChange={e => setSendAMessageForm({
                                         ...SendAMessageForm,
                                         message: e.target.value,
@@ -202,7 +202,7 @@ export default function SendAMessage(props) {
                             <li className="cnr-full">
                                 <ReCAPTCHA ref={captchaRef} sitekey="6Ldy6IEhAAAAAOnXdArKtwygfu6f3doYCblZQYHi" size="invisible" />
                             </li>
-                            <li className="cnr-full"><center><button className="btn-1">Submit</button></center></li>
+                            <li className="cnr-full" data-aos="zoom-in" data-aos-delay="1000" data-aos-offset="0"><center><button className="btn-1">Submit</button></center></li>
                         </ul>
                             </form>
                         </div>

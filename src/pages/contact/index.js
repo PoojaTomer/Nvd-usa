@@ -14,7 +14,7 @@ export default function Contact(props) {
                 <meta name="keyword" content="Nvd usa" />
             </Helmet>
             <Breadcrumb Title="Contact Us" Image={IMAGES.contactPage.ContactBanner} /> 
-            <OurLocation/>
+            <OurLocation />
             <SendAMessage />
         </>
     );

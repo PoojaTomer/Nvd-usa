@@ -84,14 +84,14 @@ export default function Tab(props) {
     return (
       <>
         <section className="career-sec5 hidden-xs">
-        <div className="container" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="linear">
+        <div className="container">
             <div className="col-md-10 offset-md-1">
             <div className="cen-h">
-                <h2>Offline fun that <span className='text-orange'>Keeps us</span> going!</h2>
+                <h2 data-aos="fade-up" data-aos-delay="100" data-aos-offset="0" data-aos-duration="500" data-aos-easing="linear">Offline fun that <span className='text-orange'>Keeps us</span> going!</h2>
             </div>
-            <p className="text-center mb-4">Client calls, team huddles, deadlines, creative thinking, and coming up with new ideas can be exhausting. Occasionally, to keep us all sane, we like to step out to happy hours, elope someplace beautiful, or plan some fun activity in-house.</p>
+            <p className="text-center mb-4" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0" data-aos-duration="700" data-aos-easing="linear">Client calls, team huddles, deadlines, creative thinking, and coming up with new ideas can be exhausting. Occasionally, to keep us all sane, we like to step out to happy hours, elope someplace beautiful, or plan some fun activity in-house.</p>
         </div>
-            <div className="card">
+            <div className="card" data-aos="zoom-in" data-aos-delay="100" data-aos-offset="0" data-aos-duration="1000" data-aos-easing="linear">
                 <div className="card-header">
                   <ul className="nav nav-tabs nav-tabs-neutral justify-content-center" role="tablist" data-background-color="orange">
                   {offlineData?.map((value,nameindex) => {
@@ -155,14 +155,14 @@ export default function Tab(props) {
       <div className="container">
       <div className="col-md-10 offset-md-1">
             <div className="cen-h">
-                <h2>Offline fun that <span className='text-orange'>Keeps us</span> going!</h2>
+                <h2 data-aos="fade-up" data-aos-delay="100" data-aos-offset="0" data-aos-duration="500" data-aos-easing="linear">Offline fun that <span className='text-orange'>Keeps us</span> going!</h2>
             </div>
-            <p className="text-center mb-4">Client calls, team huddles, deadlines, creative thinking, and coming up with new ideas can be exhausting. Occasionally, to keep us all sane, we like to step out to happy hours, elope someplace beautiful, or plan some fun activity in-house.</p>
+            <p className="text-center mb-4" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0" data-aos-duration="700" data-aos-easing="linear">Client calls, team huddles, deadlines, creative thinking, and coming up with new ideas can be exhausting. Occasionally, to keep us all sane, we like to step out to happy hours, elope someplace beautiful, or plan some fun activity in-house.</p>
         </div>
           <div className="accordion" id="faq">
               {offlineData?.map((value,index) => {
                   return(
-                      <div className="card" key={index}>
+                      <div className="card" key={index} data-aos="fade-up" data-aos-delay="500" data-aos-offset="0" data-aos-duration="1000" data-aos-easing="linear">
                           <div className="card-header" id="faqhead1">
                               <a className="btn btn-header-link" onClick={() => setCurrentState(value.Name)}>{value.Name}
                               <div className="accordion-icon">
