@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Link} from 'react-router-dom';
 import { faAngleUp, faEnvelope, faMapMarkerAlt, faMessage, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaWhatsappSquare, FaWhatsapp } from "react-icons/fa";
 import { SOCIAL_LINK } from '../constants/Constants';
 import { IMAGES } from '../constants/Image-Constant';
 
@@ -79,7 +79,7 @@ function Footer(props) {
                         <div className="reach-us">
                             <ul>
                                 <li><FontAwesomeIcon icon={faMapMarkerAlt} /> The Curve Building, M-46, Mezzanine floor Plot No. 358-574 - Shiekh Zayed Rd, AI Quoz 3, PO Box No. - 391048, Dubai, United Arab Emirates</li>
-                                <li><FontAwesomeIcon icon={faPhone}/> <a href="tel:+97143321990">+971 4332 1990</a></li>
+                                <li><FontAwesomeIcon icon={faPhone}/> <a href="tel:+1 (407) 204-0600">+1 (407) 204-0600</a></li>
                                 <li><FontAwesomeIcon icon={faEnvelope}/> <a href="mailto:hello@newvisiondigital.co">hello@newvisiondigital.co</a></li>
                             </ul>
                         </div>
@@ -95,12 +95,15 @@ function Footer(props) {
     </footer>
     <a id="back-to-top" className="btn btn-light btn-lg back-to-top" role="button" style={{display: visible ? 'inline' : 'none'}} onClick={scrollToTop}>  <FontAwesomeIcon icon={faAngleUp} /></a>
     <a
+    //  href={`https://wa.me/+1072040600?text=""`}
           href="https://wa.me/+971547064859"
+        data-action="share/whatsapp/share"
           className="whatsapp_float"
           target="_blank"
           rel="noopener noreferrer"
         >
-        <FontAwesomeIcon icon={faMessage} className="whatsapp-icon" color="#fff" />
+        <FaWhatsapp className="whatsapp-icon" color="#fff" />
+        {/* <FontAwesomeIcon icon={FaWhatsappSquare} className="whatsapp-icon" color="#fff" /> */}
         </a>
         <ul className="social-float">
         <li className='fb-icon'>

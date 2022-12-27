@@ -25,7 +25,7 @@ export default function GetAQuoteButton(props) {
        <a data-aos="fade-up" data-aos-delay="400" data-aos-offset="0" onClick={props.CtaFloat? showCta : showModal} className={props.btn ? props.btn:"btn-1"}>{props.Title}</a>
        {
         isCtaVisible === true && (
-          <CtaFloatForm isCtaVisible={isCtaVisible} handleOk={handleOk}/>
+          <CtaFloatForm isCtaVisible={isCtaVisible} handleOk={handleOk} handleCancel={handleCancel} />
         )
        }
        <GetAQuote isModalVisible={isModalVisible} handleOk={handleOk} handleCancel={handleCancel} {...props} />

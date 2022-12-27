@@ -49,7 +49,7 @@ export default function WitnessTheGrowth(props) {
         <div className="container">
             <div className="row">
                 <div className="col-md-12">
-                    <div className="cen-h" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+                    <div className="cen-h" data-aos="fade-up" data-aos-delay="100" data-aos-offset="0">
                         <h2>Witness the Growth Journey of <span className="highlight">Your Website From</span></h2>
                         <div className="google-img">
                             <img src={IMAGES.homepage.GoogleHome} className="img-fluid" alt="google" />
@@ -58,7 +58,7 @@ export default function WitnessTheGrowth(props) {
                 </div>
             </div>
             <div className="row">
-                <div className="col-md-6" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="linear">
+                <div className="col-md-6" data-aos="fade-up" data-aos-delay="200" data-aos-offset="0">
                     <div className="case-study">
                         {/* <!--start-slide--> */}
                         <Slider {...settings} spaceBetween={30}>
@@ -152,7 +152,7 @@ export default function WitnessTheGrowth(props) {
                         </Slider>
                     </div>
                 </div>
-                <div className="col-md-6" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="linear">
+                <div className="col-md-6" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
                     <div className="seo-img-s">
                         <img src={IMAGES.homepage.SeoHome} className="img-fluid" alt="seo" />
                     </div>

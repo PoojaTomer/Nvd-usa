@@ -105,7 +105,7 @@ export default function ReadyToGet(props) {
             formData.append("service", DiscoveryCallFormField.services);
             formData.append("message", DiscoveryCallFormField.message);
             axios({
-                url: `http://site4clientdemo.com/nvd-usa/mails/discovery_call.php`,
+                url: `https://phpstack-281388-2949987.cloudwaysapps.com/mails/discovery_call.php`,
                 method: "post",
                 responseType: 'json',
                 data: formData,
@@ -140,6 +140,11 @@ export default function ReadyToGet(props) {
             });
             }
         }
+        const preventMinus = (e) => {
+            if (e.code === 'Minus') {
+                e.preventDefault();
+            }
+        };
     return (
         <>
         {
@@ -152,12 +157,12 @@ export default function ReadyToGet(props) {
                             <p data-aos="fade-up" data-aos-delay="200" data-aos-offset="0">{props.Description}</p>
                             <GetAQuoteButton Title="Get In Touch" btn="btn-1" />
                             {/* <Link className="btn-3" to="/contact">Get In Touch</Link> */}
-                        <a data-aos="fade-up" data-aos-delay="400" data-aos-offset="0" href="tel:97143321900" className="btn-2 ml-2"><FontAwesomeIcon icon={faPhone} /> +97143321900</a>
+                        <a data-aos="fade-up" data-aos-delay="400" data-aos-offset="0" href="tel:+1 (407) 204-0600" className="btn-2 ml-2"><FontAwesomeIcon icon={faPhone} /> +1 (407) 204-0600</a>
                         </div>
                 </div>
             </div>
         </section>:
-        <div className='bg-wrap'>
+        // <div className='bg-wrap'>
         <section className="inner-service-sec5">
         <div className="container">
             <div className="row align-items-center">
@@ -166,7 +171,7 @@ export default function ReadyToGet(props) {
                         <h4 data-aos="fade-up" data-aos-delay="100" data-aos-offset="0">{props.Title}</h4>
                         <p data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">{props.Description}</p>
                         {/* <Link className="btn-3" to="/contact">Get In Touch</Link> */}
-                        <a href="tel:97143321900" className="btn-2 ml-2" data-aos="fade-up" data-aos-delay="500" data-aos-offset="0"><FontAwesomeIcon icon={faPhone} /> +97143321900</a>
+                        <a href="tel:+1 (407) 204-0600" className="btn-2 ml-2" data-aos="fade-up" data-aos-delay="500" data-aos-offset="0"><FontAwesomeIcon icon={faPhone} /> +1 (407) 204-0600</a>
                         {/* </div> */}
                 </div>
                 <div className="col-md-6">
@@ -176,7 +181,7 @@ export default function ReadyToGet(props) {
                             <form onSubmit={(e) => submitHandler(e)}>
                             <ul className="form-list">
                                 <li data-aos="fade-up" data-aos-delay="100" data-aos-offset="0">
-                                    <input type="text" className="form-control" placeholder="First Name*"  value={discoveryCallForm.firstName} onChange={e => setDiscoveryCallForm({
+                                    <input type="text" className="form-control" placeholder="First Name*" value={discoveryCallForm.firstName} onChange={e => setDiscoveryCallForm({
                                             ...discoveryCallForm,
                                             firstName: e.target.value,
                                             firstNameError: ""
@@ -192,7 +197,7 @@ export default function ReadyToGet(props) {
                                     <span className='error'>{discoveryCallForm.lastNameError}</span>
                                 </li>
                                 <li data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
-                                    <input type="email" className="form-control" placeholder="Email*"  value={discoveryCallForm.email} onChange={e => setDiscoveryCallForm({
+                                    <input type="email" className="form-control" placeholder="Email*" value={discoveryCallForm.email} onChange={e => setDiscoveryCallForm({
                                                 ...discoveryCallForm,
                                                 email: e.target.value,
                                                 emailError: ""
@@ -200,25 +205,23 @@ export default function ReadyToGet(props) {
                                     <span className='error'>{discoveryCallForm.emailError}</span>
                                </li>
                                 <li data-aos="fade-up" data-aos-delay="400" data-aos-offset="0"> 
-                                    <input type="number" className="form-control" placeholder="Phone*"  value={discoveryCallForm.mobile} onChange={e => setDiscoveryCallForm({
+                                    <input type="number" onKeyPress={preventMinus} className="form-control" placeholder="Phone*" value={discoveryCallForm.mobile} onChange={e => setDiscoveryCallForm({
                                             ...discoveryCallForm,
-                                            mobile: e.target.value,
+                                            mobile: e.target.value.slice(0, 10),
                                             mobileError: ""
                                         })} disabled={discoveryCallForm.processing} />
                                     <span className='error'>{discoveryCallForm.mobileError}</span>
                                 </li>
                                 <li className="cnr-full" data-aos="fade-up" data-aos-delay="500" data-aos-offset="0">
-                                    <select className="form-control" value={discoveryCallForm.services} onChange={e => setDiscoveryCallForm({
+                                    <select className="form-control" placeholder="Select Services*" value={discoveryCallForm.services} onChange={e => setDiscoveryCallForm({
                                                 ...discoveryCallForm,
                                                 services: e.target.value,
                                                 servicesError: ""
                                             })} disabled={discoveryCallForm.processing}>
-                                            <option value="-1" selected="">Select Services</option>
+                                            <option value="-1" selected="">Select Services*</option>
                                             <option value="Search Engine Optimization">Search Engine Optimization</option>
                                             <option value="Social Media Optimization">Social Media Optimization</option>
-                                            <option value="Influencer Marketing">Influencer Marketing</option>
                                             <option value="Online Reputation Marketing">Online Reputation Marketing</option>
-                                            <option value="Wordpress Development">Email Marketing</option>
                                             <option value="Social Media Marketing">Ecommerce Marketplace Management</option>
                                             <option value="PPC">PPC</option>
                                             <option value="Social Media Ads">Social Media Ads</option>
@@ -230,16 +233,11 @@ export default function ReadyToGet(props) {
                                             <option value="Mobile App Development">Mobile App Development</option>
                                             <option value="Web Design">Web Design</option>
                                             <option value="Logo Design">Logo Design</option>
-                                            <option value="Business Setup">Business Setup</option>
-                                            <option value="Accounting &amp; Auditing">Accounting &amp; Auditing</option>
-                                            <option value="CFO Service">CFO Service</option>
-                                            <option value="Zoho Consulting">Zoho Consulting</option>
-                                            <option value="Cloud Services">Cloud Services</option>
                                     </select>
                                     <span className='error'>{discoveryCallForm.servicesError}</span>
                                 </li>
                                  <li className="cnr-full" data-aos="fade-up" data-aos-delay="600" data-aos-offset="0">
-                                    <textarea className="form-control" rows="4" value={discoveryCallForm.message} onChange={e => setDiscoveryCallForm({
+                                    <textarea placeholder="Message*" className="form-control" rows="4" value={discoveryCallForm.message} onChange={e => setDiscoveryCallForm({
                                             ...discoveryCallForm,
                                             message: e.target.value,
                                             messageError: ""
@@ -264,7 +262,7 @@ export default function ReadyToGet(props) {
             </div>
         </div>
     </section>
-    </div>
+    // </div>
 }
     </>
     );

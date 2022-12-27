@@ -55,7 +55,7 @@ setServicesData(TabData);
                         servicesData.map((value,index)=>{
                             return(
                                 <li className="nav-item" key={index}>
-                                <a href="javascript:void();" class={currentState === value.Name ? "nav-link active" :"nav-link"} onClick={()=>setCurrentState(value.Name)}>{value.Name}</a>
+                                <a href="javascript:void();" className={currentState === value.Name ? "nav-link active" :"nav-link"} onClick={()=>setCurrentState(value.Name)}>{value.Name}</a>
                               </li>
                             )
                         })
@@ -69,13 +69,13 @@ setServicesData(TabData);
                             return(
                                 <>
                                 {currentState === value.Name && (
-                                <div class={currentState === value.Name ? "tab-pane active" : "tab-pane"}>
+                                <div className={currentState === value.Name ? "tab-pane active" : "tab-pane"}>
                                     <div className="row align-items-center">
-                                        <div class="col-md-6">
+                                        <div className="col-md-6">
                                         <h4 data-aos="fade-up" data-aos-delay="100" data-aos-offset="0" data-aos-duration="1000" data-aos-easing="linear">{value.Title}</h4>
                                         <p data-aos="fade-up" data-aos-delay="300" data-aos-offset="0" data-aos-duration="1500" data-aos-easing="linear">{value.Description}</p>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div className="col-md-6">
                                             <img src={value.Image} className="img-fluid" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="linear" />
                                         </div>
                                     </div>  

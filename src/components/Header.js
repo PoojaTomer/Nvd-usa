@@ -54,7 +54,7 @@ function Header(props) {
                 <div className="get-btn">
                         <Link onClick={showModal}>Get a Quote</Link>
                     </div>
-                            <li className='hidden-xs' data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0"><img src={IMAGES.headerImg.Phone} className="img-fluid" alt="call" /> <span><strong>Call us</strong> <a href="tel:+9715470 64859">+971 5470 64859</a></span></li>
+                            <li className='hidden-xs' data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0"><img src={IMAGES.headerImg.Phone} className="img-fluid" alt="call" /> <span><strong>Call us</strong> <a href="tel:+1 (407) 204-0600">+1 (407) 204-0600</a></span></li>
                             <li className='hidden-xs' data-aos="zoom-in" data-aos-delay="500" data-aos-offset="0"><img src={IMAGES.headerImg.Email} className="img-fluid"  alt="email" /> <span><strong>Mail us</strong> <a href="mailto:hello@newvisondigital.co">hello@newvisondigital.co</a></span></li>
                         </ul>
                         </div>

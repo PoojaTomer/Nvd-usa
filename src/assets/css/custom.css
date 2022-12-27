@@ -9,12 +9,12 @@ body{
   color: #000;
   overflow-x: hidden;
 }
-/* body {
+body {
   user-select: none !important;
   -moz-user-select: -moz-none !important;
   -webkit-user-select: none !important;
   -ms-user-select: none !important;
-} */
+}
 :root{
     --orange:#ff521d;
 }
@@ -98,7 +98,7 @@ footer h5{font-weight: 700; margin-bottom: 15px;}
 .bottom-footer{background: #fff; padding: 20px 0; margin-top:30px;}
 .bottom-footer p{text-align: center; font-weight: 600; font-size: 16px; margin-bottom: 0;}
 .back-to-top {position: fixed;bottom: 10px;right: 10px;display: none;background: #e6e6e6;}
-.whatsapp_float {position: fixed;width: 60px;height: 60px;bottom: 20px;left: 15px;background-color: var(--main);color: #fff;border-radius: 50px;text-align: center;font-size: 30px;box-shadow: 2px 2px 3px #999;z-index: 100;}
+.whatsapp_float {position: fixed;width: 60px;height: 60px;bottom: 20px;left: 15px;background-color: #03a84e ;color: #fff;border-radius: 50px;text-align: center;font-size: 30px;box-shadow: 2px 2px 3px #999;z-index: 100;}
 .whatsapp-icon {margin-top: 16px;}
 .social-float {
   position: fixed;
@@ -281,7 +281,7 @@ footer h5{font-weight: 700; margin-bottom: 15px;}
 .h-form-in form select{height: 50px !important;}
 .h-form-in .form-group{margin-bottom: 0.5rem;}
 .h-form-in button{border: 0; padding: 10px 40px;}
-.home-sec9{padding:0px 0px 50px;}
+.home-sec9{padding:50px 0px;}
 .home-sec9 .cen-h h2{text-align: center; font-weight: 700; margin-bottom: 30px;}
 .h-loc-sec{border-radius: 10px; min-height: 220px; border: 1px solid #eee; padding: 25px; background: #fff;box-shadow: 0px 0px 10px -4px hsl(0deg 0% 0% / 30%);
   /* animation: blink-box 10s ease-in-out infinite */
@@ -353,6 +353,7 @@ z-index: 10;}
 .address-sec h5{margin: 15px 0 20px; font-weight: 600; font-size: 18px;}
 .address-sec ul li{display: flex; margin-bottom: 10px;}
 .address-sec ul li svg{margin-right: 10px; color: #ff521d; background: #eee; border-radius: 50px; height: 15px; width: 15px; text-align: center; line-height: 30px;padding: 0.5rem}
+.address-sec ul li a{color: rgba(0, 0, 0, 0.85);}
 .address-sec ul li span{width: 86%;}
 .contact-sec2{padding: 50px 0px;background: url(../images/contact-bg.jpg) no-repeat;background-size: cover;background-position: center;position: relative;}
 /* .contact-sec2::before{background: rgba(0, 0, 0, 0.2);height: 100%;width: 100%;content: "";position: absolute;top: 0;left: 0;} */
@@ -490,7 +491,7 @@ background-position: bottom center;;}
 } */
 .service-sec2{padding: 50px 0;background-image: url('../images/home-fifteen-back.png');background-repeat: no-repeat;background-position: center;background-size: cover;height: auto;}
 .service-sec2 h2{text-align: center;font-weight: 700;}
-.service-box{padding: 1.5rem;box-shadow: 0px 0px 15px -10px #000;border-radius: 10px;background-color: #fdeee9;margin-top: 2rem;width: 100%;border-bottom: 2px solid transparent;border-top: 5px solid transparent;
+.service-box{padding: 1.5rem;box-shadow: 0px 0px 15px -10px #000;border-radius: 10px;background-color: #fdeee9;margin-bottom: 2rem;width: 100%;border-bottom: 2px solid transparent;border-top: 5px solid transparent;
    /* transform: rotateY(180deg); */
   transition: all 0.5s ease-in-out;
   transition-delay: 0.3s;}
@@ -540,8 +541,8 @@ background-position: bottom center;;}
 .form-cta h4{font-weight: 700;line-height: 1.2;font-size: 2.5rem;color: #fff;}
 .form-cta p{color: #fff;}
 .inner-service-sec5{padding: 5rem 0;background-repeat: no-repeat;background-size: cover;height: auto;
-  /* background-position: 0rem 20%;position: relative;
-  background-image: url('../images/ready.jpg'); */
+  /* background-position: 0rem 20%;position: relative;*/
+  background-image: url('../images/ready.jpg'); 
 }
 /* .inner-service-sec5::before{content: "";
   position: absolute;
@@ -563,6 +564,16 @@ background-position: bottom center;;}
 .innerservice-sec4 h4{text-align: left;font-weight: 700;line-height: 1.5;color: var(--orange);font-size: 1.5rem;}
 .innerservice-sec4 ul li{position: relative;padding-left: 1.5rem;line-height: 2;font-size: 13px;margin-bottom:0.5rem}
 .innerservice-sec4 ul li::before{position: absolute;top: 0;left: 0;content: '\00BB';font-family: "FontAwesome";color: var(--orange);font-weight: 600;font-size: 1.2rem; line-height: 1.4;}
+.how-we-do{padding: 50px 0;background-image: url('../images/how-we-do.jpg');background-repeat: no-repeat;background-position: center;background-size: cover;height: auto;}
+.how-we-do h2{text-align: center;font-weight: 700;}
+.how-we-do h4{text-align: left;font-weight: 700;line-height: 1.5;color: var(--orange);font-size: 1.5rem;}
+.how-we-do ul li{position: relative;padding-left: 1.5rem;line-height: 2;font-size: 13px;margin-bottom:0.5rem;font-weight: 500;}
+.how-we-do ul li::before{position: absolute;top: 0;left: 0;content: '\00BB';font-family: "FontAwesome";color: var(--orange);font-weight: 600;font-size: 1.2rem; line-height: 1.4;}
+.our-popular-service{padding: 50px 0;background-repeat: no-repeat;background-position: center;background-size: cover;height: auto;position: relative;}
+.our-popular-service h2{text-align: center;font-weight: 700;}
+.our-popular-service h4{text-align: left;font-weight: 700;line-height: 1.5;color: var(--orange);font-size: 1.5rem;}
+.our-popular-service ul li{position: relative;padding-left: 1.5rem;line-height: 2;font-size: 13px;margin-bottom:0.5rem}
+.our-popular-service ul li::before{position: absolute;top: 0;left: 0;content: '\00BB';font-family: "FontAwesome";color: var(--orange);font-weight: 600;font-size: 1.2rem; line-height: 1.4;}
 .inner-service-sec6{padding: 50px 0;}
 .inner-service-sec6 h2{text-align: center;font-weight: 700;}
 .inner-service-sec6 h4{text-align: left;font-weight: 700;line-height: 1.5;color: var(--orange);font-size: 1.5rem;}
@@ -594,6 +605,15 @@ background-position: bottom center;;}
 .slick-dots li.slick-active button:before{color: transparent !important;}
 .form-list{margin-bottom: 0rem;}
 @media only screen and (max-width:500px){
+  .slider-con ul li{margin-right: 1rem;}
+  .slider-con ul{margin-bottom: 10px;}
+  .home-sec1 .h-sec1-con ul li strong{font-size: 15px;}
+  .cta-float{bottom: 5rem !important;width: 96% !important;right: 0.5rem !important;}
+  .cta-float::after{content: "";position: absolute;border-top: 15px solid #fde3c8;border-left: 15px solid transparent;border-right: 15px solid transparent;left:45%;bottom: -0.8rem;} 
+  .case-achive ul li span{font-size: 1.2rem;}
+  .case-achive ul li{font-size: 13px;}
+  .home-sec7 .slick-dots{bottom: 0px;}
+  .internship-sec2 ul li span{font-size: 13px;}
   .client-area img {width: 99%;}
   .hidden-md{display: block;}
   .home-sec8 h2{margin-top: 2rem;font-size: 2rem;}
@@ -618,7 +638,10 @@ background-position: bottom center;;}
     .slider-sec{height:600px;}
     .over-slider-con{transform: translateY(-12%);}
     .slider-con ul{flex-wrap:wrap}
-    .slider-con h1{font-size:2.5rem;}
+    .slider-con h6{font-size: 1rem;}
+    .slider-con h1{line-height: 2rem;font-size: 1.5rem;margin: 0.5rem 0rem;}
+    .slider-con h5 {margin-top: 10px;color: #ff521d;font-weight: 600;font-size: 1.1rem;}
+    .mobile-banner{width: 60%;margin-top: 1rem;}
     .btn-1{margin-bottom:1rem;}
     .home-sec4 .cen-h h2{padding:0rem}
     .case-box-in {width: 100%;}
@@ -678,7 +701,7 @@ background-position: bottom center;;}
     .mobile-btn {display: inline;}
     .get-btn a {background: var(--orange);display: inline-block;color: #fff !important;padding: 13px 28px;border-radius: 50px;font-weight: 400;font-family: 'Oswald', sans-serif;font-size: 16px;transition: all 0.4s;}
     .get-btn a:hover {background: #000;color: #fff !important;}
-    .get-btn {position: absolute; right: 90px; display: inline-block;top: 0rem;}
+    .get-btn {position: absolute; right: 50px; display: inline-block;top: 0rem;}
     .custom-pop1 h3{font-size: 38px;}
     .case-study{padding: 0px 0.7rem;}
     }

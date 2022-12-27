@@ -1,4 +1,5 @@
 import React from 'react';
+import { IMAGES } from '../../../../constants/Image-Constant';
 
 export default function ServiceList(props) {
     return (

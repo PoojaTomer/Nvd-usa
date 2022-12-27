@@ -117,9 +117,9 @@ export default function InternshipForm(props) {
             formData.append("apply_for", InternshipFormField.services);
             formData.append("message", InternshipFormField.message);
             formData.append("file", InternshipFormField.resume);
-            console.log("content%%%"+formData);
+          
             axios({
-                url: `https://site4clientdemo.com/nvd-usa/mails/internship.php`,
+                url: `https://phpstack-281388-2949987.cloudwaysapps.com/mails/internship.php`,
                 method: "post",
                 responseType: 'json',
                 data: formData,
@@ -158,6 +158,11 @@ export default function InternshipForm(props) {
             });
         }
     }
+    const preventMinus = (e) => {
+        if (e.code === 'Minus') {
+            e.preventDefault();
+        }
+    };
     return (
         <Modal className="custom-pop1" open={props.isModalVisible} onOk={() => props.handleOk()} onCancel={() => props.handleCancel()} footer={null} closable={false}>
     <button type="button" className="close" onClick={() => props.handleOk()}>
@@ -186,9 +191,9 @@ export default function InternshipForm(props) {
                             <span className='error'>{internshipForm.emailError}</span>
                     </li>
                    <li>
-                       <input type="number" name="phone" className="form-control" placeholder="Phone Number*" value={internshipForm.mobile} onChange={e => setInternshipForm({
+                       <input type="number" onKeyPress={preventMinus} name="phone" className="form-control" placeholder="Phone Number*" value={internshipForm.mobile} onChange={e => setInternshipForm({
                                 ...internshipForm,
-                                mobile: e.target.value,
+                                mobile: e.target.value.slice(0, 10),
                                 mobileError: ""
                             })} disabled={internshipForm.processing} />
                                 <span className='error'>{internshipForm.mobileError}</span>
@@ -199,7 +204,7 @@ export default function InternshipForm(props) {
                             services: e.target.value,
                             servicesError: ""
                         })} disabled={internshipForm.processing}>
-                           <option value="">Apply job for</option>
+                           <option value="">Apply job for*</option>
                            <option value="Social Media Excutive">Social Media Excutive</option>
                            <option value="PPC Excutive">PPC Excutive</option>
                            <option value="Content Writer">Content Writer</option>
@@ -219,7 +224,7 @@ export default function InternshipForm(props) {
                             <span className='error'>{internshipForm.resumeError}</span>
                     </li>
                    <li className="cnr-full">
-                       <textarea className="form-control" name="message" placeholder="Message" value={internshipForm.message} onChange={e => setInternshipForm({
+                       <textarea className="form-control" name="message" placeholder="Message*" value={internshipForm.message} onChange={e => setInternshipForm({
                             ...internshipForm,
                             message: e.target.value,
                             messageError: ""

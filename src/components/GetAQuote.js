@@ -108,7 +108,7 @@ const navigate = useNavigate();
             formData.append("message", GetAQuoteFormField.message);
 
             axios({
-                url: `http://site4clientdemo.com/nvd-usa/mails/get_quote.php`,
+                url: `https://phpstack-281388-2949987.cloudwaysapps.com/mails/get_quote.php`,
                 method: "post",
                 responseType: 'json',
                 data: formData,
@@ -142,7 +142,11 @@ const navigate = useNavigate();
             });
         }
     }
-
+    const preventMinus = (e) => {
+        if (e.code === 'Minus') {
+            e.preventDefault();
+        }
+    };
     return (
         <Modal className="custom-pop" open={props.isModalVisible} onOk={() => props.handleOk()} onCancel={() => props.handleCancel()} footer={null} closable={false}>
         <button type="button" className="close" onClick={() => props.handleOk()}>
@@ -163,9 +167,9 @@ const navigate = useNavigate();
                             <span className='error'>{GetAQuoteForm.fullNameError}</span>
                        </li>
                        <li>
-                           <input type="number" name="phone" className="form-control" placeholder="Phone Number*" value={GetAQuoteForm.mobile} onChange={e => setGetAQuoteForm({
+                           <input type="number" name="phone" onKeyPress={preventMinus} className="form-control" placeholder="Phone Number*" value={GetAQuoteForm.mobile} onChange={e => setGetAQuoteForm({
                                 ...GetAQuoteForm,
-                                mobile: e.target.value,
+                                mobile: e.target.value.slice(0,10),
                                 mobileError: ""
                             })} disabled={GetAQuoteForm.processing} />
                                 <span className='error'>{GetAQuoteForm.mobileError}</span>
@@ -184,13 +188,10 @@ const navigate = useNavigate();
                             services: e.target.value,
                             servicesError: ""
                         })} disabled={GetAQuoteForm.processing}>
-                            <option value="-1" selected="">Select Services</option>
+                            <option value="-1" selected="">Select Services*</option>
                             <option value="Search Engine Optimization">Search Engine Optimization</option>
                             <option value="Social Media Optimization">Social Media Optimization</option>
-                            <option value="Influencer Marketing">Influencer Marketing</option>
                             <option value="Online Reputation Marketing">Online Reputation Marketing</option>
-                            <option value="Wordpress Development">Email Marketing</option>
-                            <option value="Social Media Marketing">Ecommerce Marketplace Management</option>
                             <option value="PPC">PPC</option>
                             <option value="Social Media Ads">Social Media Ads</option>
                             <option value="Wordpress Development">Wordpress Development</option>
@@ -201,16 +202,12 @@ const navigate = useNavigate();
                             <option value="Mobile App Development">Mobile App Development</option>
                             <option value="Web Design">Web Design</option>
                             <option value="Logo Design">Logo Design</option>
-                            <option value="Business Setup">Business Setup</option>
-                            <option value="Accounting &amp; Auditing">Accounting &amp; Auditing</option>
-                            <option value="CFO Service">CFO Service</option>
-                            <option value="Zoho Consulting">Zoho Consulting</option>
-                            <option value="Cloud Services">Cloud Services</option>
+                            
                            </select>
                            <span className='error'>{GetAQuoteForm.servicesError}</span>
                        </li>
                        <li className="cnr-full">
-                           <textarea rows="4" className="form-control" name="message" placeholder="Message" value={GetAQuoteForm.message} onChange={e => setGetAQuoteForm({
+                           <textarea rows="4" className="form-control" name="message" placeholder="Message*" value={GetAQuoteForm.message} onChange={e => setGetAQuoteForm({
                             ...GetAQuoteForm,
                             message: e.target.value,
                             messageError: ""

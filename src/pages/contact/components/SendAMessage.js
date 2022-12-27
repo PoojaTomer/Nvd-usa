@@ -90,7 +90,7 @@ export default function SendAMessage(props) {
             formData.append("message", SendAMessageFormField.message);
 
             axios({
-                url: `http://site4clientdemo.com/nvd-usa/mails/contact.php`,
+                url: `https://phpstack-281388-2949987.cloudwaysapps.com/mails/contact.php`,
                 method: "post",
                 responseType: 'json',
                 data: formData,
@@ -123,6 +123,11 @@ export default function SendAMessage(props) {
             });
         }
         }
+        const preventMinus = (e) => {
+            if (e.code === 'Minus') {
+                e.preventDefault();
+            }
+        };
     return (
         <section className="contact-sec2">
         <div className="container">
@@ -135,7 +140,7 @@ export default function SendAMessage(props) {
                         <form onSubmit={(e) => submitHandler(e)}>
                         <ul className="form-list">
                             <li data-aos="zoom-in" data-aos-delay="100" data-aos-offset="0"> 
-                                <input type="text" name="name" placeholder="Name" className="form-control" value={SendAMessageForm.fullName} onChange={e => setSendAMessageForm({
+                                <input type="text" name="name" placeholder="Name*" className="form-control" value={SendAMessageForm.fullName} onChange={e => setSendAMessageForm({
                                         ...SendAMessageForm,
                                         fullName: e.target.value,
                                         fullNameError: ""
@@ -143,7 +148,7 @@ export default function SendAMessage(props) {
                                 <span className='error'>{SendAMessageForm.fullNameError}</span>
                             </li>
                             <li data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0">
-                                <input type="email" name="name" placeholder="Email Id" className="form-control" value={SendAMessageForm.email} onChange={e => setSendAMessageForm({
+                                <input type="email" name="name" placeholder="Email Id*" className="form-control" value={SendAMessageForm.email} onChange={e => setSendAMessageForm({
                                         ...SendAMessageForm,
                                         email: e.target.value,
                                         emailError: ""
@@ -151,9 +156,9 @@ export default function SendAMessage(props) {
                                 <span className='error'>{SendAMessageForm.emailError}</span>
                             </li>
                             <li data-aos="zoom-in" data-aos-delay="500" data-aos-offset="0"> 
-                                <input type="number" name="name" placeholder="Phone No." className="form-control" value={SendAMessageForm.mobile} onChange={e => setSendAMessageForm({
+                                <input type="number" name="name" onKeyPress={preventMinus} placeholder="Phone No.*" className="form-control" value={SendAMessageForm.mobile} onChange={e => setSendAMessageForm({
                                         ...SendAMessageForm,
-                                        mobile: e.target.value,
+                                        mobile: e.target.value.slice(0, 10),
                                         mobileError: ""
                                     })} disabled={SendAMessageForm.processing} />
                                 <span className='error'>{SendAMessageForm.mobileError}</span>
@@ -164,13 +169,10 @@ export default function SendAMessage(props) {
                                         services: e.target.value,
                                         servicesError: ""
                                     })} disabled={SendAMessageForm.processing}>
-                                    <option value="-1" selected="">Select Services</option>
+                                    <option value="-1" selected="">Select Services*</option>
                                     <option value="Search Engine Optimization">Search Engine Optimization</option>
                                     <option value="Social Media Optimization">Social Media Optimization</option>
-                                    <option value="Influencer Marketing">Influencer Marketing</option>
                                     <option value="Online Reputation Marketing">Online Reputation Marketing</option>
-                                    <option value="Wordpress Development">Email Marketing</option>
-                                    <option value="Social Media Marketing">Ecommerce Marketplace Management</option>
                                     <option value="PPC">PPC</option>
                                     <option value="Social Media Ads">Social Media Ads</option>
                                     <option value="Wordpress Development">Wordpress Development</option>
@@ -181,16 +183,11 @@ export default function SendAMessage(props) {
                                     <option value="Mobile App Development">Mobile App Development</option>
                                     <option value="Web Design">Web Design</option>
                                     <option value="Logo Design">Logo Design</option>
-                                    <option value="Business Setup">Business Setup</option>
-                                    <option value="Accounting &amp; Auditing">Accounting &amp; Auditing</option>
-                                    <option value="CFO Service">CFO Service</option>
-                                    <option value="Zoho Consulting">Zoho Consulting</option>
-                                    <option value="Cloud Services">Cloud Services</option>
                                 </select>
                                 <span className='error'>{SendAMessageForm.servicesError}</span>
                             </li>
                             <li className="cnr-full" data-aos="zoom-in" data-aos-delay="900" data-aos-offset="0">
-                                <textarea rows="4" placeholder="Message" name="message" className="form-control" value={SendAMessageForm.message} onChange={e => setSendAMessageForm({
+                                <textarea rows="4" placeholder="Message*" name="message" className="form-control" value={SendAMessageForm.message} onChange={e => setSendAMessageForm({
                                         ...SendAMessageForm,
                                         message: e.target.value,
                                         messageError: ""

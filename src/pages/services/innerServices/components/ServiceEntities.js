@@ -27,7 +27,7 @@ const  CheckIsEven =(number)=>{
                 props.EntityData.map((value,index)=>{
                  console.log("total length=>",props.EntityData.length);
                     return(
-                        <div class= {props.EntityData.length% 2 === 0? "col-md-6 d-flex" :"col-md-4 d-flex"}>
+                        <div className= {props.EntityData.length% 2 === 0? "col-md-6 d-flex" :"col-md-4 d-flex"}>
                         <div className="service-box active">
                             <h4 data-aos="fade-up" data-aos-delay="100" data-aos-offset="0">{value.SubHeading}</h4>
                           <p data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">{value.Description}</p>
@@ -59,7 +59,7 @@ const  CheckIsEven =(number)=>{
                         <div className="row align-items-center">
                          <div className="col-md-6 text-left">
                             <div className="image-box">
-                            <img src={value.Image} className="img-fluid" alt="Set a Campaign" data-aos="zoom-in" data-aos-duration="1000"  data-aos-easing="linear" />
+                            <img src={value.Image} className="img-fluid" alt="Set a Campaign" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="linear" />
                             </div>
                             </div>
                             <div className="col-md-6">

@@ -35,7 +35,7 @@ export default function SEO(props) {
         {
         SubHeading:"Strategise:",
         Image:IMAGES.servicePage.SeoEntity1,
-        Description:"We’ll map out an effective plan in depth keyword research keeping in mind your audience & niche. Our team will map the plan with your pages and work towards implementing it. List down all that you want us to deliver, and we will identify the best possible solutions to make your website visible on top pages of SERPs.",
+        Description:"We’ll map out an effective plan in depth keyword research keeping in mind your audience & niche. Our team will map the plan with your website and work towards implementing it. List down all that you want us to deliver, and we will identify the best possible solutions to make your website visible on top pages of SERPs.",
         Event:true,
     },
     {

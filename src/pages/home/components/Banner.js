@@ -14,10 +14,13 @@ export default function Banner(props) {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6">
-                            <div className="slider-con" >
+                            <div className="slider-con">
+                                <div className="mobile-banner">
                                 <h6 data-aos="fade-down" data-aos-duration="1000" data-aos-easing="linear">Partner With Result Driven</h6>
                                 <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-easing="linear">Digital Marketing Agency in <span>USA</span></h1>
-                                <p data-aos="fade-right" data-aos-duration="1000" data-aos-easing="linear"><strong>Looking for the best agency in USA for your business?</strong> New Vision Digital has 15+ years of experience in SEO industry.</p>
+                                <p data-aos="fade-right" data-aos-duration="1000" data-aos-easing="linear"><strong>Looking for the best agency in USA for your business?</strong></p>
+                                </div>
+                                <p data-aos="fade-up" data-aos-delay="100" data-aos-offset="0">New Vision Digital has 15+ years of experience in SEO industry.</p>
                                 <h5 data-aos="fade-up" data-aos-delay="100" data-aos-offset="0">Our Efforts Help businesses to Achieve:</h5>
                                 <ul className="counter">
                                     <li className="increase" data-max="75" data-aos="fade-up" data-aos-delay="100" data-aos-offset="0"><span><CountUp end={75} />% </span><p>Increment in Organic Search Traffic</p></li>

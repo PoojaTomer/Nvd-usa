@@ -145,6 +145,45 @@ import SmmEntity1 from "../assets/images/set-a-campaign.gif";
 import SmmEntity2 from "../assets/images/production-of-content.jpg";
 import SmmEntity3 from "../assets/images/deliver-dramatic.gif";
 import SmmEntity4 from "../assets/images/understand-what.jpg";
+import ppcBanner from "../assets/images/ppc-banner.jpg";
+import ppcAbout from "../assets/images/ppc-about.jpg";
+import ppcEntity1 from "../assets/images/ppc-entity1.jpg";
+import ppcEntity2 from "../assets/images/ppc-entity2.jpg";
+import ppcEntity3 from "../assets/images/ppc-entity3.jpg";
+import ppcEntity4 from "../assets/images/ppc-entity4.jpg";
+import ppcEntity5 from "../assets/images/ppc-entity5.jpg";
+import ppcEntity6 from "../assets/images/ppc-entity6.jpg";
+import wpBanner from "../assets/images/wp-banner.jpg";
+import wpAbout from "../assets/images/wp-about.jpg";
+import menBanner from "../assets/images/magento-banner.jpg";
+import menAbout from "../assets/images/men-about.png";
+import MenEntity1 from "../assets/images/men-entity1.jpg";
+import MenEntity2 from "../assets/images/men-entity2.jpg";
+import MenEntity3 from "../assets/images/men-entity3.jpg";
+import MenEntity4 from "../assets/images/men-entity4.jpg";
+import MenEntity5 from "../assets/images/men-entity5.jpg";
+import ormBanner from "../assets/images/orm-banner.jpg";
+import ormAbout from "../assets/images/orm-about.png";
+import ormEntity from "../assets/images/orm-entity.jpg";
+import videoBanner from "../assets/images/video-banner.jpg";
+import videoAbout from "../assets/images/video-about.jpg";
+import videoMarketServices from "../assets/images/video-about.png";
+import videoEntity1 from "../assets/images/video-entity1.png";
+import videoEntity2 from "../assets/images/video-entity2.jpg";
+import videoEntity3 from "../assets/images/video-entity3.jpg";
+import WebDesignBanner from "../assets/images/web-design-banner.jpg";
+import WebDesignEntity1 from "../assets/images/webdesign-entity1.jpg";
+import WebDesignEntity2 from "../assets/images/webdesign-entity2.jpg";
+import WebDesignEntity3 from "../assets/images/webdesign-entity3.jpg";
+import WebDesignEntity4 from "../assets/images/webdesign-entity4.jpg";
+import LogoDesignBanner from "../assets/images/logo-design-banner.jpg";
+import LogoDesignAbout from "../assets/images/logo-design-about.jpg";
+import LogoDesignPopularService from "../assets/images/logodesign-popular-services.jpg";
+import LogoDesignEntity1 from "../assets/images/logo-design-entity1.jpg";
+import LogoDesignEntity2 from "../assets/images/logo-design-entity2.jpg";
+import LogoDesignEntity3 from "../assets/images/logo-design-entity3.jpg";
+import LogoDesignEntity4 from "../assets/images/logo-design-entity4.jpg";
+import LogoDesignEntity5 from "../assets/images/logo-design-entity5.jpg";
 import ImAbout from "../assets/images/influncer1.jpg";
 import ImEntity1 from "../assets/images/influncer2.jpg";
 import ImEntity2 from "../assets/images/influncer3.jpg";
@@ -154,7 +193,6 @@ import ImEntity5 from "../assets/images/influncer6.jpg";
 import ImEntity6 from "../assets/images/influncer7.jpg";
 import ImEntity7 from "../assets/images/influncer8.jpg";
 import OrmAbout from "../assets/images/rep1.png";
-import OrmEntity1 from "../assets/images/rep8.png";
 import EmAbout from "../assets/images/boost.png";
 import EmListImg from "../assets/images/emailers.png";
 import ecommerce from "../assets/images/ecommerce.png";
@@ -175,22 +213,40 @@ import eCom6 from "../assets/images/e-com6.jpg";
 import transframHeading from "../assets/images/transfram-heading.png";
 import icri from "../assets/images/icri.png";
 import magento from "../assets/images/magento2.png";
-import shopify from "../assets/images/shopify3.png";
-import Php from "../assets/images/php1.webp";
-import Php1 from "../assets/images/php2.webp";
-import mobileAbout from "../assets/images/mobileapright.png";
+import ShopifyBanner from "../assets/images/shopify-banner.jpg";
+import ShopifyAbout from "../assets/images/shopify-about.jpg";
+import ShopifyBenefitsBusiness from "../assets/images/shopify-benefits-business.jpg";
+import ShopifyEntity1 from "../assets/images/shopify-entity1.jpg";
+import ShopifyEntity2 from "../assets/images/shopify-entity2.jpg";
+import ShopifyEntity3 from "../assets/images/shopify-entity3.jpg";
+import ShopifyEntity4 from "../assets/images/shopify-entity4.jpg";
+import ShopifyEntity5 from "../assets/images/shopify-entity5.jpg";
+import PhpBanner from "../assets/images/php-banner.jpg";
+import PhpAbout from "../assets/images/php-about.jpg";
+import PhpEntity1 from "../assets/images/php-entity1.jpg";
+import PhpEntity2 from "../assets/images/php-entity2.jpg";
+import PhpEntity3 from "../assets/images/php-entity3.jpg";
+import PhpEntity4 from "../assets/images/php-entity4.jpg";
+import PhpEntity5 from "../assets/images/php-entity5.jpg";
+import mobileBanner from "../assets/images/mobile-banner.jpg";
+import mobileDesignbg from "../assets/images/design-bg.jpg";
+import mobileAbout from "../assets/images/mobile-about.jpg";
+import mobileDesign from "../assets/images/mobile-design.jpg";
 import mobileList from "../assets/images/mobileapptools.png";
-import mobileApp1 from "../assets/images/mobileapp01.png";
-import mobileApp2 from "../assets/images/mobileapp02.png";
-import mobileApp3 from "../assets/images/mobileapp03.png";
-import mobileApp4 from "../assets/images/mobileapp04.png";
-import mobileApp5 from "../assets/images/mobileapp05.png";
-import mobileApp6 from "../assets/images/mobileapp06.png";
-import mobileApp7 from "../assets/images/mobileapp07.png";
-import ppcAbout from "../assets/images/ppc-1.png";
-import ppcAbout1 from "../assets/images/ppc-2.png";
-import ppcListing from "../assets/images/ppc-3.png";
-import ppcResion from "../assets/images/ppc-4.png";
+import mobileApp1 from "../assets/images/mobile-entity1.jpg";
+import mobileApp2 from "../assets/images/mobile-entity2.jpg";
+import mobileApp3 from "../assets/images/mobile-entity3.jpg";
+import mobileApp4 from "../assets/images/mobile-entity4.jpg";
+import mobileApp5 from "../assets/images/mobile-entity5.jpg";
+import mobileApp6 from "../assets/images/mobile-entity6.jpg";
+import mobileApp7 from "../assets/images/mobile-entity7.jpg";
+import reactBanner from "../assets/images/react-banner.jpg";
+import reactAbout from "../assets/images/react-about.jpg";
+import reactEntity1 from "../assets/images/react-entity1.jpg";
+import reactEntity2 from "../assets/images/react-entity2.jpg";
+import reactEntity3 from "../assets/images/react-entity3.jpg";
+import reactEntity4 from "../assets/images/react-entity4.jpg";
+import reactEntity5 from "../assets/images/react-entity5.jpg";
 import SAddAbout from "../assets/images/sma-about.jpg";
 import SAddEntity1 from "../assets/images/sma-entity1.jpg";
 import SAddEntity2 from "../assets/images/sma-entity2.jpg";
@@ -342,6 +398,38 @@ export const IMAGES = {
     SmmEntity2:SmmEntity2,
     SmmEntity3:SmmEntity3,
     SmmEntity4:SmmEntity4,
+    WpBanner:wpBanner,
+    WpAbout:wpAbout,
+    MenBanner:menBanner,
+    menAbout:menAbout,
+    MenEntity1:MenEntity1,
+    MenEntity2:MenEntity2,
+    MenEntity3:MenEntity3,
+    MenEntity4:MenEntity4,
+    MenEntity5:MenEntity5,
+    OrmBanner:ormBanner,
+    OrmAbout:ormAbout,
+    OrmEntity:ormEntity,
+    VideoBanner:videoBanner,
+    VideoAbout:videoAbout,
+    VideoMarketServices:videoMarketServices,
+    VideoEntity1:videoEntity1,
+    VideoEntity2:videoEntity2,
+    VideoEntity3:videoEntity3,
+    WebDesignBanner:WebDesignBanner,
+    WebDesignEntity1:WebDesignEntity1,
+    WebDesignEntity2:WebDesignEntity2,
+    WebDesignEntity3:WebDesignEntity3,
+    WebDesignEntity4:WebDesignEntity4,
+    LogoDesignBanner:LogoDesignBanner,
+    LogoDesignAbout:LogoDesignAbout,
+    LogoDesignPopularService:LogoDesignPopularService,
+    LogoDesignEntity1:LogoDesignEntity1,
+    LogoDesignEntity2:LogoDesignEntity2,
+    LogoDesignEntity3:LogoDesignEntity3,
+    LogoDesignEntity4:LogoDesignEntity4,
+    LogoDesignEntity5:LogoDesignEntity5,
+    ppcBanner:ppcBanner,
     ImAbout:ImAbout,
     ImEntity1:ImEntity1,
     ImEntity2:ImEntity2,
@@ -351,7 +439,6 @@ export const IMAGES = {
     ImEntity6:ImEntity6,
     ImEntity7:ImEntity7,
     OrmAbout:OrmAbout,
-    OrmEntity1:OrmEntity1,
     EmAbout:EmAbout,
     EmListImg:EmListImg,
     Ecommerce:ecommerce,
@@ -372,10 +459,25 @@ export const IMAGES = {
     TransframHeading:transframHeading,
     Icri:icri,
     Magento:magento,
-    Shopify:shopify,
-    Php:Php,
-    Php1:Php1,
+    ShopifyBanner:ShopifyBanner,
+    ShopifyAbout:ShopifyAbout,
+    PhpBanner:PhpBanner,
+    ShopifyBenefitsBusiness:ShopifyBenefitsBusiness,
+    ShopifyEntity1:ShopifyEntity1,
+    ShopifyEntity2:ShopifyEntity2,
+    ShopifyEntity3:ShopifyEntity3,
+    ShopifyEntity4:ShopifyEntity4,
+    ShopifyEntity5:ShopifyEntity5,
+    PhpAbout:PhpAbout,
+    PhpEntity1:PhpEntity1,
+    PhpEntity2:PhpEntity2,
+    PhpEntity3:PhpEntity3,
+    PhpEntity4:PhpEntity4,
+    PhpEntity5:PhpEntity5,
+    MobileBanner:mobileBanner,
     mobileAbout: mobileAbout,
+    MobileDesign:mobileDesign,
+    mobileDesignbg:mobileDesignbg,
     mobileList:mobileList,
     mobileApp1:mobileApp1,
     mobileApp2:mobileApp2,
@@ -384,10 +486,20 @@ export const IMAGES = {
     mobileApp5:mobileApp5,
     mobileApp6:mobileApp6,
     mobileApp7:mobileApp7,
+    ReactBanner:reactBanner,
+    ReactAbout: reactAbout,
+    ReactEntity1:reactEntity1,
+    ReactEntity2:reactEntity2,
+    ReactEntity3:reactEntity3,
+    ReactEntity4:reactEntity4,
+    ReactEntity5:reactEntity5,
     PpcAbout:ppcAbout,
-    PpcAbout1:ppcAbout1,
-    PpcListing:ppcListing,
-    PpcResion:ppcResion,
+    PpcEntity1:ppcEntity1,
+    PpcEntity2:ppcEntity2,
+    PpcEntity3:ppcEntity3,
+    PpcEntity4:ppcEntity4,
+    PpcEntity5:ppcEntity5,
+    PpcEntity6:ppcEntity6,
     SAddAbout:SAddAbout,
     SAddEntity1:SAddEntity1,
     SAddEntity2:SAddEntity2,

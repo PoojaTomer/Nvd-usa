@@ -26,7 +26,9 @@ import Footer from './components/Footer';
  const PhpDevelopment = lazy(() => import("./pages/services/innerServices/PhpDevelopment"));
  const WebsiteDesign = lazy(() => import("./pages/services/innerServices/WebsiteDesign"));
  const SocialAdvertising = lazy(() => import("./pages/services/innerServices/SocialAdvertising"));
- 
+ const VideoMarketing = lazy(() => import("./pages/services/innerServices/VideoMarketing"));
+ const LogoDesign = lazy(() => import("./pages/services/innerServices/LogoDesign"));
+ const ReactDevelopment = lazy(() => import("./pages/services/innerServices/ReactDevelopment"));
  const ThankYou = lazy(() => import("./pages/ThankYou"));
  const NotFound = lazy(() => import("./pages/NotFound"));
 
@@ -63,6 +65,9 @@ function App() {
       <Route path="/career" element={<Career  title="career page" />} />
       <Route path="/internship" element={<Internship  title="internship page" />} />
       <Route path="/giant-migration" element={<GiantMigration  title="Giant Migration page" />} />
+      <Route path="/video-marketing" element={<VideoMarketing  title="Video Marketing page" />} />
+      <Route path="/logo-design" element={<LogoDesign  title="Logo Design page" />} />
+      <Route path="/react-development" element={<ReactDevelopment  title="React Development page" />} />
       <Route path="/thank-you" element={<ThankYou title="Thank You page"/>} />
       <Route path="*" element={<NotFound title="no record found"/>} />
     </Routes>

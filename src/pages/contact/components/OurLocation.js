@@ -16,7 +16,7 @@ export default function OurLocation(props) {
                         <h5>New Vision Digital INC</h5>
                         <ul>
                             <li><FontAwesomeIcon icon={faMapMarkerAlt} /> <span>1317 Edgewater Dr, Suite 897, Orlando, Florida 32804, US</span></li>
-                            <li><FontAwesomeIcon icon={faPhone} /> <span>+44 2081449090</span></li>
+                            <li><FontAwesomeIcon icon={faPhone} /> <a href="tel:+1 (407) 204-0600"><span>+1 (407) 204-0600</span></a></li>
                             <li><FontAwesomeIcon icon={faEnvelope} /> <span>hello@newvisiondigital.co</span></li>
                         </ul>
                     </div>
@@ -28,7 +28,7 @@ export default function OurLocation(props) {
                         <h5>New Vision Digital PVT LTD</h5>
                         <ul>
                             <li><FontAwesomeIcon icon={faMapMarkerAlt} /> <span>Udyog Marg, C 89 c, 2nd Floor, Sector 8, Noida, Uttar Pradesh 201301, IN</span></li>
-                            <li><FontAwesomeIcon icon={faPhone} /> <span>+91 9818456688</span></li>
+                            <li><FontAwesomeIcon icon={faPhone} /> <a href="tel:+919818456688"><span>+91 9818456688</span></a></li>
                             <li><FontAwesomeIcon icon={faEnvelope} /> <span>hello@newvisiondigital.co</span></li>
                         </ul>
                     </div>
@@ -40,7 +40,7 @@ export default function OurLocation(props) {
                         <h5>Global Biz Digital Media</h5>
                         <ul>
                             <li><FontAwesomeIcon icon={faMapMarkerAlt} /> <span>The Curve Building, M-46, Mezzanine floor Plot No. 358-574 Sheikh Zayed Rd, Al Quoz 3, PO Box No. - 391048, Dubai</span></li>
-                            <li><FontAwesomeIcon icon={faPhone} /> <span>+971 54 706 4859</span></li>
+                            <li><FontAwesomeIcon icon={faPhone} /> <a href="tel:+971547064859"><span>+971 54 706 4859</span></a></li>
                             <li><FontAwesomeIcon icon={faEnvelope} /> <span>digital@globalbiz.co</span></li>
                         </ul>
                     </div>

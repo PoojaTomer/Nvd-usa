@@ -59,10 +59,10 @@ function OurOffbeatMarketing(props) {
                         <h2 data-aos="fade-up" data-aos-delay="400" data-aos-offset="0">Our Offbeat Marketing Solutions Drive Dollars to Your Bank Accounts</h2>
                         <p data-aos="fade-up" data-aos-delay="600" data-aos-offset="0">In this covoluted Industry that is subjected to exponential growth and constant evolution, It's the first impression that lasts a lifetime. As an innovative Digital Marketing Agency. We have:</p>      
                         <ul>
-                            <li data-aos="fade-right" data-aos-delay="800" data-aos-offset="0"><span data-max="12">+</span> <strong>Industry<br/>Experience</strong></li>
-                            <li data-aos="fade-left" data-aos-delay="900" data-aos-offset="0"><span data-max="10">K+</span> <strong>Happy<br/>Clients</strong></li>
-                            <li data-aos="fade-right" data-aos-delay="1000" data-aos-offset="0"><span data-max="100">+</span> <strong>Experts</strong></li>
-                            <li data-aos="fade-left" data-aos-delay="1100" data-aos-offset="0"><span data-max="90">%</span> <strong>Client<br/>Retention</strong></li>
+                            <li data-aos="fade-up" data-aos-delay="800" data-aos-offset="0"><span data-max="12">+</span> <strong>Industry<br/>Experience</strong></li>
+                            <li data-aos="fade-up" data-aos-delay="900" data-aos-offset="0"><span data-max="10">K+</span> <strong>Happy<br/>Clients</strong></li>
+                            <li data-aos="fade-up" data-aos-delay="1000" data-aos-offset="0"><span data-max="100">+</span> <strong>Experts</strong></li>
+                            <li data-aos="fade-up" data-aos-delay="1100" data-aos-offset="0"><span data-max="90">%</span> <strong>Client<br/>Retention</strong></li>
                         </ul>
                     </div>
                 </div>

@@ -174,7 +174,7 @@ export default function CareerForm(props) {
             formData.append("file", ResumeFormField.resume);
 
             axios({
-                url: `https://site4clientdemo.com/nvd-usa/mails/career.php`,
+                url: `https://phpstack-281388-2949987.cloudwaysapps.com/mails/career.php`,
                 method: "post",
                 responseType: 'json',
                 data: formData,
@@ -220,6 +220,11 @@ export default function CareerForm(props) {
             });
         }
     }
+    const preventMinus = (e) => {
+        if (e.code === 'Minus') {
+            e.preventDefault();
+        }
+    };
     return (
         <Modal className="custom-pop1" open={props.isModalVisible} onCancel={() => props.handleCancel()} footer={null} closable={false}>
         <button type="button" className="close" onClick={() => props.handleOk()}>
@@ -248,9 +253,9 @@ export default function CareerForm(props) {
                             <span className='error'>{careerForm.emailError}</span>
                         </li>
                        <li>
-                           <input type="number" name="phone" className="form-control" placeholder="Phone Number*"  value={careerForm.mobile} onChange={e => setCareerForm({
+                           <input type="number" name="phone" onKeyPress={preventMinus} className="form-control" placeholder="Phone Number*"  value={careerForm.mobile} onChange={e => setCareerForm({
                                 ...careerForm,
-                                mobile: e.target.value,
+                                mobile: e.target.value.slice(0, 10),
                                 mobileError: ""
                             })} disabled={careerForm.processing} />
                                 <span className='error'>{careerForm.mobileError}</span>
@@ -261,7 +266,7 @@ export default function CareerForm(props) {
                             services: e.target.value,
                             servicesError: ""
                         })} disabled={careerForm.processing}>
-                               <option value="">Apply job for</option>
+                               <option value="">Apply job for*</option>
                                <option value="Social Media Excutive">Social Media Excutive</option>
                                <option value="PPC Excutive">PPC Excutive</option>
                                <option value="Content Writer">Content Writer</option>
@@ -271,7 +276,7 @@ export default function CareerForm(props) {
                            <span className='error'>{careerForm.servicesError}</span>
                        </li>
                        <li>
-                        <input type="text" name="experience" className="form-control" placeholder="Total Experience*"  value={careerForm.experience} onChange={e => setCareerForm({
+                        <input type="text" name="experience" onKeyPress={preventMinus} className="form-control" placeholder="Total Experience*"  value={careerForm.experience} onChange={e => setCareerForm({
                             ...careerForm,
                             experience: e.target.value,
                             experienceError: ""
@@ -279,7 +284,7 @@ export default function CareerForm(props) {
                             <span className='error'>{careerForm.experienceError}</span>
                         </li>
                         <li>
-                            <input type="text" name="relevantexperience" className="form-control" placeholder="Relevant Experience*" value={careerForm.relevantExperience} onChange={e => setCareerForm({
+                            <input type="text" name="relevantexperience" onKeyPress={preventMinus} className="form-control" placeholder="Relevant Experience*" value={careerForm.relevantExperience} onChange={e => setCareerForm({
                             ...careerForm,
                             relevantExperience: e.target.value,
                             relevantExperienceError: ""
@@ -287,7 +292,7 @@ export default function CareerForm(props) {
                             <span className='error'>{careerForm.relevantExperienceError}</span>
                         </li>
                         <li>
-                            <input type="text" name="currentpackage" className="form-control" placeholder="Current Package*" value={careerForm.currentPackage} onChange={e => setCareerForm({
+                            <input type="text" name="currentpackage" onKeyPress={preventMinus} className="form-control" placeholder="Current Package*" value={careerForm.currentPackage} onChange={e => setCareerForm({
                             ...careerForm,
                             currentPackage: e.target.value,
                             currentPackageError: ""
@@ -295,7 +300,7 @@ export default function CareerForm(props) {
                             <span className='error'>{careerForm.currentPackageError}</span>
                         </li>
                         <li>
-                            <input type="text" name="expactedpackage" className="form-control" placeholder="Expacted Package*" value={careerForm.expactedPackage} onChange={e => setCareerForm({
+                            <input type="text" name="expactedpackage" onKeyPress={preventMinus} className="form-control" placeholder="Expacted Package*" value={careerForm.expactedPackage} onChange={e => setCareerForm({
                             ...careerForm,
                             expactedPackage: e.target.value,
                             expactedPackageError: ""
@@ -303,7 +308,7 @@ export default function CareerForm(props) {
                             <span className='error'>{careerForm.expactedPackageError}</span>
                         </li>
                         <li>
-                            <input type="text" name="noticeperiod" className="form-control" placeholder="Notice Period*" value={careerForm.noticePeriod} onChange={e => setCareerForm({
+                            <input type="text" name="noticeperiod" onKeyPress={preventMinus} className="form-control" placeholder="Notice Period*" value={careerForm.noticePeriod} onChange={e => setCareerForm({
                             ...careerForm,
                             noticePeriod: e.target.value,
                             noticePeriodError: ""
@@ -319,7 +324,7 @@ export default function CareerForm(props) {
                             <span className='error'>{careerForm.resumeError}</span>
                         </li>
                        <li className="cnr-full">
-                           <textarea className="form-control" name="message" placeholder="Message" value={careerForm.message} onChange={e => setCareerForm({
+                           <textarea className="form-control" name="message" placeholder="Message*" value={careerForm.message} onChange={e => setCareerForm({
                             ...careerForm,
                             message: e.target.value,
                             messageError: ""
