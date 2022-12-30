@@ -60,7 +60,7 @@ import UaeFlag from "../assets/images/uae.jpg";
 import globalbizLogo from "../assets/images/globalbiz.jpg";
 // about page
 import AboutBanner from "../assets/images/about-banner.jpg";
-import AboutNvd from "../assets/images/about-nvd.png";
+import AboutNvd from "../assets/images/photoframe.png";
 import sumitTayal from "../assets/images/sumit-tayal.png";
 import pawanGupta from "../assets/images/pawan-gupta.png";
 import manaliGill from "../assets/images/manali-gill.png";

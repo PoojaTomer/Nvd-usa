@@ -11,6 +11,7 @@ import "../assets/css/megamenu.css";
 import { IMAGES } from '../constants/Image-Constant';
 import GetAQuote from "./GetAQuote.js";
 import MegaMenu from './MegaMenu';
+import {FaChevronDown } from 'react-icons/fa';
 
 
 function Header(props) {
@@ -71,7 +72,7 @@ function Header(props) {
                        
                         <li className="nav-item">
                             <NavLink to="/services" className={({ isActive }) => isActive ? "current nav-link mega-drop-down" : "nav-link mega-drop-down"
-                              } onClick={closeMobileMenu}>Services</NavLink>
+                              } onClick={closeMobileMenu}>Services <FaChevronDown /></NavLink>
                             <MegaMenu />
                         </li>
                     
